@@ -12,140 +12,139 @@
   nav .brand span { color: #60a5fa; }
   nav .date { color: #a0aec0; font-size: 0.82rem; }
   .container { max-width: 960px; margin: 0 auto; padding: 28px 20px 60px; }
-  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 16px; padding: 36px 36px 32px; margin-bottom: 32px; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 16px; padding: 36px 36px 32px; margin-bottom: 24px; }
   .hero h1 { font-size: 1.85rem; font-weight: 800; margin-bottom: 8px; }
-  .hero .sub { color: #a0c4ff; font-size: 0.9rem; margin-top: 6px; }
+  .hero .sub { color: #a0c4ff; font-size: 0.88rem; margin-top: 6px; }
   .hero .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .tag { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e0e7ff; font-size: 0.75rem; padding: 3px 10px; border-radius: 999px; }
-  .section-title { font-size: 1.15rem; font-weight: 700; color: #1a1a2e; border-left: 4px solid #3b82f6; padding-left: 12px; margin: 36px 0 18px; }
-  /* FOCUS BLOCK */
-  .focus-block { background: linear-gradient(135deg, #1e3a5f 0%, #1a1a2e 100%); border-radius: 14px; padding: 24px 28px; margin-bottom: 32px; color: #fff; border: 1px solid rgba(96,165,250,0.3); }
-  .focus-block .focus-label { display: inline-flex; align-items: center; gap: 6px; background: #e11d48; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; letter-spacing: 0.06em; margin-bottom: 14px; }
-  .focus-block .focus-title { font-size: 1.05rem; font-weight: 700; color: #bfdbfe; margin-bottom: 12px; }
-  .focus-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  /* FOCUS */
+  .focus-block { background: linear-gradient(135deg, #1e3a5f 0%, #1a1a2e 100%); border-radius: 14px; padding: 22px 26px; margin-bottom: 28px; border: 1px solid rgba(96,165,250,0.25); }
+  .focus-label { display: inline-flex; align-items: center; gap: 6px; background: #e11d48; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; letter-spacing: 0.06em; margin-bottom: 14px; }
+  .focus-title { font-size: 1rem; font-weight: 700; color: #bfdbfe; margin-bottom: 12px; }
+  .focus-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
   .focus-item { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 14px 16px; }
-  .focus-item .fi-icon { font-size: 1.4rem; margin-bottom: 6px; }
-  .focus-item .fi-title { font-size: 0.88rem; font-weight: 700; color: #e0e7ff; margin-bottom: 4px; }
-  .focus-item .fi-body { font-size: 0.8rem; color: #94a3b8; line-height: 1.6; }
-  .focus-item .fi-tag { display: inline-block; margin-top: 8px; font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
-  .fi-tag-bull { background: rgba(22,163,74,0.25); color: #4ade80; }
-  .fi-tag-warn { background: rgba(245,158,11,0.25); color: #fbbf24; }
-  .fi-tag-neutral { background: rgba(156,163,175,0.2); color: #d1d5db; }
-  /* NEWS CARDS */
-  .news-card { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid #3b82f6; transition: box-shadow 0.2s; }
+  .fi-icon { font-size: 1.4rem; margin-bottom: 6px; }
+  .fi-title { font-size: 0.88rem; font-weight: 700; color: #e0e7ff; margin-bottom: 4px; }
+  .fi-body { font-size: 0.79rem; color: #94a3b8; line-height: 1.6; }
+  .fi-tag { display: inline-block; margin-top: 8px; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  .fi-bull { background: rgba(22,163,74,0.25); color: #4ade80; }
+  .fi-warn { background: rgba(245,158,11,0.25); color: #fbbf24; }
+  .fi-neutral { background: rgba(156,163,175,0.2); color: #d1d5db; }
+  /* SECTION */
+  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; border-left: 4px solid #3b82f6; padding-left: 12px; margin: 32px 0 16px; }
+  /* NEWS */
+  .news-card { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid #3b82f6; transition: box-shadow 0.2s; }
   .news-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
   .news-card:nth-child(4n+1) { border-left-color: #3b82f6; }
   .news-card:nth-child(4n+2) { border-left-color: #10b981; }
   .news-card:nth-child(4n+3) { border-left-color: #f59e0b; }
   .news-card:nth-child(4n+4) { border-left-color: #a855f7; }
-  .news-title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+  .news-title { font-size: 0.98rem; font-weight: 700; margin-bottom: 7px; }
   .news-title a { color: #1a1a2e; text-decoration: none; }
   .news-title a:hover { color: #3b82f6; text-decoration: underline; }
   .news-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
-  .badge { font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
-  .badge-blue { background: #dbeafe; color: #1d4ed8; }
-  .badge-green { background: #dcfce7; color: #166534; }
-  .badge-amber { background: #fef3c7; color: #92400e; }
-  .badge-purple { background: #f3e8ff; color: #7e22ce; }
-  .badge-red { background: #fee2e2; color: #991b1b; }
-  .badge-gray { background: #f1f5f9; color: #475569; }
-  .time { font-size: 0.75rem; color: #9ca3af; }
-  .news-body { font-size: 0.9rem; color: #374151; line-height: 1.7; }
+  .badge { font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
+  .badge-bloomberg { background: #dbeafe; color: #1d4ed8; }
+  .badge-ft { background: #fee2e2; color: #991b1b; }
+  .badge-wsj { background: #fef9c3; color: #92400e; }
+  .badge-caixin { background: #dcfce7; color: #166534; }
+  .time { font-size: 0.72rem; color: #9ca3af; }
+  .news-body { font-size: 0.88rem; color: #374151; line-height: 1.7; }
   /* ANALYSIS */
-  .analysis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .analysis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
   .analysis-card { background: #fff; border-radius: 12px; padding: 20px 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-  .analysis-card h3 { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
-  .analysis-card p { font-size: 0.88rem; color: #374151; line-height: 1.75; }
-  /* INVESTMENT GRID */
-  .invest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; margin-bottom: 8px; }
-  .invest-card { background: #fff; border-radius: 14px; padding: 22px 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
-  .invest-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
-  .invest-icon { font-size: 2.4rem; margin-bottom: 8px; }
-  .invest-name { font-size: 0.95rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; }
-  .invest-dir { font-size: 2rem; margin-bottom: 6px; }
-  .invest-label { font-size: 0.78rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; display: inline-block; margin-bottom: 10px; }
+  .analysis-card h3 { font-size: 0.93rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
+  .analysis-card p { font-size: 0.86rem; color: #374151; line-height: 1.75; }
+  /* INVEST */
+  .invest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 8px; }
+  .invest-card { background: #fff; border-radius: 14px; padding: 20px 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); text-align: center; transition: transform 0.2s; }
+  .invest-card:hover { transform: translateY(-2px); }
+  .invest-icon { font-size: 2.2rem; margin-bottom: 8px; }
+  .invest-name { font-size: 0.92rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
+  .invest-dir { font-size: 1.6rem; margin-bottom: 6px; }
+  .invest-label { font-size: 0.74rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; display: inline-block; margin-bottom: 8px; }
   .bull .invest-label { background: #dcfce7; color: #15803d; }
   .bull { border-top: 4px solid #16a34a; }
   .neutral .invest-label { background: #f3f4f6; color: #6b7280; }
   .neutral { border-top: 4px solid #9ca3af; }
-  .invest-logic { font-size: 0.78rem; color: #6b7280; line-height: 1.6; text-align: left; }
-  .invest-logic a { color: #3b82f6; font-size: 0.73rem; text-decoration: none; display: inline-block; margin-top: 6px; }
-  .invest-logic a:hover { text-decoration: underline; }
-  /* INDUSTRY TRACKS */
-  .track-block { background: #fff; border-radius: 12px; padding: 22px 24px; margin-bottom: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-  .track-block h3 { font-size: 1rem; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #f3f4f6; }
-  .track-item { padding: 12px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.88rem; color: #374151; }
+  .invest-logic { font-size: 0.76rem; color: #6b7280; line-height: 1.6; text-align: left; }
+  .invest-logic a { color: #3b82f6; font-size: 0.7rem; text-decoration: none; display: inline-block; margin-top: 4px; }
+  /* TRACK */
+  .track-block { background: #fff; border-radius: 12px; padding: 20px 22px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+  .track-block h3 { font-size: 0.98rem; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #f3f4f6; }
+  .track-item { padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.86rem; color: #374151; }
   .track-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .track-item strong { color: #1a1a2e; display: block; margin-bottom: 4px; font-size: 0.92rem; }
-  .track-item a { color: #3b82f6; font-size: 0.78rem; font-weight: 600; text-decoration: none; }
+  .track-item strong { color: #1a1a2e; display: block; margin-bottom: 3px; font-size: 0.9rem; }
+  .track-item a { color: #3b82f6; font-size: 0.75rem; font-weight: 600; text-decoration: none; }
   .track-item a:hover { text-decoration: underline; }
-  /* SECTOR TABLE */
+  /* SECTOR */
   .sector-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-  .sector-table th { background: #1a1a2e; color: #fff; padding: 12px 16px; text-align: left; font-size: 0.82rem; font-weight: 600; }
-  .sector-table td { padding: 12px 16px; font-size: 0.88rem; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
+  .sector-table th { background: #1a1a2e; color: #fff; padding: 11px 16px; text-align: left; font-size: 0.82rem; font-weight: 600; }
+  .sector-table td { padding: 11px 16px; font-size: 0.86rem; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
   .sector-table tr:last-child td { border-bottom: none; }
   .sector-table tr:hover td { background: #f9fafb; }
   .dir-bull { color: #059669; font-weight: 700; }
   .dir-neutral { color: #6b7280; font-weight: 700; }
   .dir-bear { color: #dc2626; font-weight: 700; }
   /* RISK */
-  .risk-item { background: #fff; border-left: 4px solid #f59e0b; border-radius: 10px; padding: 16px 20px; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+  .risk-item { background: #fff; border-left: 4px solid #f59e0b; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
   .risk-item strong { color: #92400e; display: block; margin-bottom: 4px; font-size: 0.93rem; }
-  .risk-item p { font-size: 0.87rem; color: #4b5563; }
-  footer { background: #1a1a2e; color: #6b7280; text-align: center; padding: 24px 20px; font-size: 0.78rem; margin-top: 48px; }
+  .risk-item p { font-size: 0.85rem; color: #4b5563; }
+  footer { background: #1a1a2e; color: #6b7280; text-align: center; padding: 22px 20px; font-size: 0.77rem; margin-top: 48px; }
   footer p { margin-bottom: 4px; }
-  @media (max-width: 640px) { .hero { padding: 24px 20px; } .hero h1 { font-size: 1.4rem; } .invest-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width:640px) { .hero { padding: 24px 18px; } .hero h1 { font-size: 1.4rem; } .invest-grid { grid-template-columns: 1fr 1fr; } }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="brand">小田<span>每日简报</span></div>
-  <div class="date">📅 2026年5月29日 星期五</div>
+  <div class="date">📅 2026年5月29日 星期五 · Bloomberg · FT · WSJ · 财新</div>
 </nav>
 
 <div class="container">
 
+  <!-- HERO -->
   <div class="hero">
     <h1>小田每日新闻简报</h1>
-    <p class="sub">数据范围：过去 24 小时 &nbsp;|&nbsp; 来源：Bloomberg · Reuters · FT · WSJ · 财新 · CNBC</p>
+    <p class="sub">数据来源：Bloomberg RSS · Financial Times 全文 · WSJ RSS · 财新 全文 · 生成时间：2026年5月29日</p>
     <div class="tags">
-      <span class="tag">🛢 布伦特$109，伊朗危机持续</span>
-      <span class="tag">📈 S&P 7,563 创历史新高</span>
-      <span class="tag">🥇 黄金回调后企稳，机构目标$5,055</span>
-      <span class="tag">🤖 OpenAI融资$1220亿</span>
-      <span class="tag">🛒 Temu转型本土履约</span>
+      <span class="tag">🗾 日本创纪录干预外汇 7.36万亿日元</span>
+      <span class="tag">📰 FT独家：俄战争超支280亿美元</span>
+      <span class="tag">🚀 马斯克推文颠覆SpaceX-Anthropic协议</span>
+      <span class="tag">🤝 美伊停火谈判持续</span>
+      <span class="tag">📈 美股九连涨，AI主线未变</span>
     </div>
   </div>
 
-  <!-- 焦点内容 -->
+  <!-- FOCUS -->
   <div class="focus-block">
     <div class="focus-label">🔥 今日焦点</div>
-    <div class="focus-title">三大核心主线主导当前全球市场格局</div>
+    <div class="focus-title">四条核心主线主导今日全球市场格局</div>
     <div class="focus-items">
       <div class="focus-item">
-        <div class="fi-icon">🛢️</div>
-        <div class="fi-title">霍尔木兹危机 × 通胀压力</div>
-        <div class="fi-body">布伦特原油从$89反弹至$109，UAE退出OPEC分化能源阵营。持续高油价推升全球通胀预期，美联储加息讨论升温，欧元区PMI跌至31个月低点。</div>
-        <span class="fi-tag fi-tag-warn">⚠️ 高度关注</span>
+        <div class="fi-icon">🗾</div>
+        <div class="fi-title">日本创纪录外汇干预</div>
+        <div class="fi-body">日本单月动用创纪录的7.36万亿日元（730亿美元）阻止日元贬值，反映美元走强压力之大，以及美联储鹰派信号对新兴市场汇率的系统性冲击。</div>
+        <span class="fi-tag fi-warn">⚠️ 汇率风险升温</span>
+      </div>
+      <div class="focus-item">
+        <div class="fi-icon">📰</div>
+        <div class="fi-title">俄罗斯财政崩裂风险</div>
+        <div class="fi-body">FT独家：俄罗斯今年战争开支预计超出预算至少280亿美元，财政部已要求冻结其他领域支出。战争持续消耗正在侵蚀克里姆林宫的财政稳健性。</div>
+        <span class="fi-tag fi-warn">⚠️ 地缘政治变量</span>
+      </div>
+      <div class="focus-item">
+        <div class="fi-icon">🚀</div>
+        <div class="fi-title">马斯克推文颠覆SpaceX估值</div>
+        <div class="fi-body">马斯克承认Anthropic-SpaceX Colossus协议实为"180天短租"，而非IPO文件所称的$450亿长期合同，SpaceX作为AI云算力提供商的估值叙事受到严重质疑。</div>
+        <span class="fi-tag fi-warn">⚠️ AI估值风险</span>
       </div>
       <div class="focus-item">
         <div class="fi-icon">🤖</div>
-        <div class="fi-title">AI超级融资周期 × 美股新高</div>
-        <div class="fi-body">OpenAI融资$1220亿估值$852亿，Anthropic获$450亿，S&P 500创历史新高7,563点，Snowflake单日+36.5%。AI盈利逻辑驱动市场对抗通胀压力。</div>
-        <span class="fi-tag fi-tag-bull">📈 核心主线</span>
-      </div>
-      <div class="focus-item">
-        <div class="fi-icon">🥇</div>
-        <div class="fi-title">黄金白银回调 × 再入场窗口</div>
-        <div class="fi-body">黄金从ATH $5,589回调至$4,694（-16%），白银从$121.64回落至$74。JP摩根维持黄金Q4目标$5,055，白银均价预测$81，回调提供中长期布局机会。</div>
-        <span class="fi-tag fi-tag-bull">📈 布局窗口</span>
-      </div>
-      <div class="focus-item">
-        <div class="fi-icon">🤝</div>
-        <div class="fi-title">中美贸易缓和 × 执行存分歧</div>
-        <div class="fi-body">特习北京峰会原则同意300亿美元关税框架，200架波音订单确认。但APEC会议暴露稀土管制、芯片出口限制等核心分歧，协议落地前景需持续追踪。</div>
-        <span class="fi-tag fi-tag-neutral">➡️ 持续追踪</span>
+        <div class="fi-title">乌克兰无人机反攻成功</div>
+        <div class="fi-body">FT深度：乌克兰每日生产300架FP无人机，每架造价约5万欧元，已成功打击俄罗斯机场和炼油厂。低成本无人机战争改变了传统大国军事博弈逻辑。</div>
+        <span class="fi-tag fi-neutral">➡️ 持续追踪</span>
       </div>
     </div>
   </div>
@@ -153,64 +152,77 @@
   <!-- 今日要闻 -->
   <div class="section-title">📰 今日要闻</div>
 
+  <!-- Bloomberg -->
   <div class="news-card">
-    <div class="news-title"><a href="https://www.weforum.org/stories/2026/05/blockade-diplomacy-and-other-geopolitical-stories-to-know-this-month/" target="_blank" rel="noopener">1. 霍尔木兹危机持续，布伦特原油回升至109美元，全球通胀预期升温</a></div>
-    <div class="news-meta"><span class="badge badge-blue">WEF / Deloitte</span><span class="time">今日</span></div>
-    <div class="news-body">美伊军事冲突进入"封锁外交"新阶段，布伦特原油从4月中旬的$89回升至$109。UAE宣布退出OPEC（5月1日生效），进一步分化中东能源阵营。持续高油价显著推升全球通胀预期，美国、欧洲、日本的加息预期概率均在上升。</div>
+    <div class="news-title"><a href="https://www.bloomberg.com/news/articles/2026-05-29/japan-used-record-73-6-billion-to-support-yen-in-past-month" target="_blank" rel="noopener">1. 日本创纪录动用7.36万亿日元（730亿美元）干预汇市支撑日元</a></div>
+    <div class="news-meta"><span class="badge badge-bloomberg">Bloomberg</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">日本财务省数据证实，在日元跌破160兑1美元后，日本政府实施了2024年以来首次外汇干预，单月动用创纪录的11.73万亿日元（约730亿美元）。这是日本史上规模最大的汇市干预行动，反映出美联储持续鹰派立场对全球汇率市场造成的系统性压力。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-28-2026" target="_blank" rel="noopener">2. 美股再创历史新高，Snowflake+36.5%带动AI软件板块全面走强</a></div>
-    <div class="news-meta"><span class="badge badge-blue">TheStreet</span><span class="badge badge-green">CNBC</span><span class="time">2026-05-28</span></div>
-    <div class="news-body">S&P 500 收于 7,563.63（+0.58%），纳斯达克涨至 26,917.47（+0.91%），均创历史新高。云数据平台 Snowflake 业绩指引超预期，单日暴涨 36.5%，带动 AI 软件板块全面走强。美伊停火传言也短暂提振市场情绪，尽管随后被白宫否认。</div>
+    <div class="news-title"><a href="https://www.ft.com/content/93674b5c-06ea-4e49-a005-dc08e1091574" target="_blank" rel="noopener">2. FT独家：俄罗斯对乌战争开支超预算280亿美元，财政压力剧增</a></div>
+    <div class="news-meta"><span class="badge badge-ft">Financial Times 全文</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">FT获得的内部信函显示，俄罗斯财政部长西卢阿诺夫2月预测今年对乌战争开支将至少超出预算2万亿卢布（280亿美元），"负面情景"下可超4万亿卢布。财政部已要求冻结2.9万亿卢布的其他领域支出。前四个月预算赤字已达GDP的2.5%，为2022年全面入侵以来最大缺口。尽管伊朗战争推高油价带来部分收入，仍不足以填补缺口。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://www.cnbc.com/2026/05/23/three-signs-from-apec-that-the-us-china-remain-far-apart-on-trade.html" target="_blank" rel="noopener">3. APEC会议揭示中美仍存重大分歧，贸易框架落地前景不明</a></div>
-    <div class="news-meta"><span class="badge badge-green">CNBC</span><span class="time">2026-05-23</span></div>
-    <div class="news-body">5月15日特朗普-习近平北京峰会后，中美原则上同意就300亿美元商品关税削减框架谈判，并确认200架波音订单和农产品采购扩大。但APEC会议上双方在关税细节、稀土管制和芯片出口限制上仍存显著分歧，协议实质落地仍存不确定性。</div>
+    <div class="news-title"><a href="https://www.ft.com/content/7df0906c-6d9b-4440-b94e-65af0a785f7b" target="_blank" rel="noopener">3. 马斯克推文颠覆SpaceX-Anthropic协议：实为180天短租非450亿长约</a></div>
+    <div class="news-meta"><span class="badge badge-ft">Financial Times 全文</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">马斯克在X上承认，SpaceX与Anthropic的Colossus超算协议仅为"双方均可90天通知的180天租约"，而非IPO招股书中所述的"至2029年5月、每月12.5亿美元"的长期合同。马斯克解释称短期结构是SpaceX的要求，以便在算力紧张时收回资源。此举正值SpaceX IPO静默期，可能违反证券法规，严重打击了SpaceX作为AI云算力提供商的商业叙事。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm" target="_blank" rel="noopener">4. 美联储维持利率3.5%-3.75%，4票反对创1992年来纪录，Warsh接任</a></div>
-    <div class="news-meta"><span class="badge badge-purple">Federal Reserve</span><span class="time">2026-04-29（最新）</span></div>
-    <div class="news-body">美联储4月会议以8:4维持利率不变，核心PCE通胀2月达3.0%（总PCE 2.8%），远超2%目标。新任主席Kevin Warsh已于5月22日就任，面临就任以来最严峻的通胀开局，市场已将年内加息概率大幅上调。</div>
+    <div class="news-title"><a href="https://www.bloomberg.com/news/articles/2026-05-28/asian-stocks-to-rise-on-firming-us-iran-sentiment-markets-wrap" target="_blank" rel="noopener">4. 美股九连涨创历史新高，市场等待美伊和平协议落地</a></div>
+    <div class="news-meta"><span class="badge badge-bloomberg">Bloomberg</span><span class="time">2026-05-28</span></div>
+    <div class="news-body">美股在历史高位附近维持稳定，S&P 500有望实现九连周涨，AI交易持续驱动涨势。交易员等待美国和伊朗是否能最终达成和平协议、恢复霍尔木兹海峡石油流通。"五月卖出"策略再度失败，AI主线成为今年市场最强叙事。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://goldsilver.com/industry-news/article/gold-price-outlook-may-2026-why-institutional-forecasters-still-see-5000/" target="_blank" rel="noopener">5. 黄金从ATH $5,589回调至$4,694后企稳，JP摩根维持Q4目标$5,055</a></div>
-    <div class="news-meta"><span class="badge badge-amber">GoldSilver.com</span><span class="badge badge-blue">JP摩根</span><span class="time">近日</span></div>
-    <div class="news-body">黄金1月28日创历史新高$5,589后，5月12日回落至约$4,694（跌幅16%），但机构看法未变。JP摩根目标Q4均价$5,055，LBMA共识预测$4,741。全球央行购金需求维持强劲（每季度平均585吨），中长期避险逻辑未变。</div>
+    <div class="news-title"><a href="https://www.bloomberg.com/news/articles/2026-05-29/fed-s-schmid-says-officials-must-signal-commitment-to-inflation" target="_blank" rel="noopener">5. 美联储堪萨斯城联储主席Schmid：官员必须明确表明抗通胀决心</a></div>
+    <div class="news-meta"><span class="badge badge-bloomberg">Bloomberg</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">美联储堪萨斯城联储主席Schmid表示，他对持续高企的通胀保持高度关注，官员们应明确表明愿意采取一切必要措施实现价格稳定。这是近期美联储官员发表的最鹰派表态之一，进一步强化了市场对年内加息可能性的预期。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://goldsilver.com/industry-news/article/silver-price-outlook-may-2026-stop-chasing-the-number/" target="_blank" rel="noopener">6. 白银从ATH $121.64回调整理，JP摩根全年均价预测$81，工业需求强劲</a></div>
-    <div class="news-meta"><span class="badge badge-amber">GoldSilver.com</span><span class="badge badge-blue">JP摩根</span><span class="time">近日</span></div>
-    <div class="news-body">白银1月29日触及历史高位$121.64，5月因中美90天关税减让消息单日暴涨6%，目前约$74回落整理。金银比率在一周内从62:1压缩至55:1，为多年来最快压缩速度。市场连续六年供应赤字，AI与绿能工业需求是长期支撑逻辑，银行美银预测白银可能涨至$135-309区间。</div>
+    <div class="news-title"><a href="https://www.ft.com/content/11b2eb12-6623-4624-83a6-5d25c905f3e6" target="_blank" rel="noopener">6. 蓝色起源火箭在发射台爆炸，亚马逊卫星计划受重创</a></div>
+    <div class="news-meta"><span class="badge badge-ft">Financial Times 全文</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">贝索斯旗下蓝色起源的"新格伦"火箭在佛罗里达州发射台热火测试中发生爆炸，距计划为亚马逊Leo星座发射48颗卫星仅数天。爆炸严重损毁发射台、闪电塔和转运竖立器，预计将严重影响全年发射计划。马斯克在X上评论："大多数不幸的事。火箭很难。"贝索斯回应："很艰难的一天，但我们会重建，继续飞行。"</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html" target="_blank" rel="noopener">7. OpenAI估值$852亿融资$1220亿，Anthropic再获谷歌$400亿，AI超级融资周期加速</a></div>
-    <div class="news-meta"><span class="badge badge-green">CNBC</span><span class="badge badge-blue">Air Street</span><span class="time">近日</span></div>
-    <div class="news-body">OpenAI以$852亿估值完成$1220亿新一轮融资，亚马逊、英伟达、软银、微软联合注资。Anthropic获谷歌额外$400亿+亚马逊$50亿（含$1000亿AWS使用承诺）。两家公司同时发布下一代旗舰模型：GPT-5.3-Codex 和 Claude Opus 4.6。中国AI实验室以极低价格提供同等能力模型，威胁美国大厂定价权。</div>
+    <div class="news-title"><a href="https://www.ft.com/content/7beeff28-27b4-417a-b1ef-43298f736f00" target="_blank" rel="noopener">7. FT深度：乌克兰无人机反攻成功，每日300架低成本无人机改变战局</a></div>
+    <div class="news-meta"><span class="badge badge-ft">Financial Times 全文</span><span class="time">2026-05-28</span></div>
+    <div class="news-body">FT深度报道：乌克兰军事科技公司Fire Point每天生产约300架FP系列无人机，每架造价约5万欧元。这些无人机每天打击俄罗斯目标，最近在克里米亚以"母船"搭载炸弹四旋翼机的战术摧毁俄军飞机。泽连斯基表示："本月战局出现有利于乌克兰的变化。"乌克兰本月对莫斯科发动了战争以来最大规模轰炸。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://www.digitalcommerce360.com/2026/01/22/temu-vs-amazon-cross-border-ecommerce-sales-2025/" target="_blank" rel="noopener">8. Temu 2025年市占率追平亚马逊达24%，转型本土履约模式应对de minimis取消</a></div>
-    <div class="news-meta"><span class="badge badge-green">Digital Commerce 360</span><span class="time">近日</span></div>
-    <div class="news-body">Temu从2022年不足1%到2025年达24%，三年追平亚马逊。美国取消de minimis免税豁免后，中国电商物流成本大幅上升，Temu加速建立美国本土卖家直供体系。亚马逊则在欧洲推出"Amazon Haul"折扣专区进行反击，Shein市占率稳定在9%。</div>
+    <div class="news-title"><a href="https://www.bloomberg.com/news/articles/2026-05-29/dollar-s-monthly-rise-leaves-strategists-wary-of-further-gains" target="_blank" rel="noopener">8. 美元月内走强令华尔街策略师警惕进一步上涨风险</a></div>
+    <div class="news-meta"><span class="badge badge-bloomberg">Bloomberg</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">本月美元随着市场预期美国利率走高而持续走强，但华尔街策略师对进一步涨势保持谨慎。美元强势已迫使日本动用创纪录资金干预，并对新兴市场货币形成系统性压力。分析师认为，当前美元上涨已较充分反映加息预期，后续需新的催化剂。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://planet.news/article/global-entertainment-industry-may-2026-developments" target="_blank" rel="noopener">9. 流媒体行业重塑：体育版权全面向数字平台迁移，混合发行成为主流</a></div>
-    <div class="news-meta"><span class="badge badge-purple">Planet News</span><span class="badge badge-gray">The Wrap</span><span class="time">近日</span></div>
-    <div class="news-body">中小预算影视内容已基本迁移至流媒体，"戏院+流媒体"同步上映的混合模式成为趋势。体育直播版权加速向流媒体转移，新兴联赛获得更大全球曝光，平台通过体育IP实现差异化竞争。短视频与创作者经济正式进入主流文化。</div>
+    <div class="news-title"><a href="https://finance.caixin.com/2026-05-29/102448724.html" target="_blank" rel="noopener">9. 财新：人民币国际化核心瓶颈仍在资本项目开放，短期难撼美元地位</a></div>
+    <div class="news-meta"><span class="badge badge-caixin">财新 全文</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">在中金公司2026伦敦财富管理大会上，多位嘉宾认为，美元在全球货币体系中的主导地位短期仍难以撼动。英国前商务大臣凯布尔表示，美元越来越多被当作制裁工具，促使更多国家寻找替代安排。但与会专家一致认为，人民币国际化仍绕不开资本项目开放、汇率机制、人民币资产流动性等基础问题。</div>
   </div>
 
   <div class="news-card">
-    <div class="news-title"><a href="https://www.deloitte.com/us/en/insights/topics/economy/global-economic-outlook/weekly-update.html" target="_blank" rel="noopener">10. 欧元区PMI跌至47.5（31个月低点），欧洲滞胀风险上升</a></div>
-    <div class="news-meta"><span class="badge badge-blue">Deloitte</span><span class="badge badge-gray">WEF</span><span class="time">近日</span></div>
-    <div class="news-body">欧元区制造业PMI从52.2降至51.4，综合PMI跌至47.5，为2023年10月以来最低。中东冲突推高能源价格，欧洲贸易摩擦（美欧汽车关税谈判进入倒计时）双重拖累，增长疲软与通胀升温并存的"滞胀"局面正在成型。</div>
+    <div class="news-title"><a href="https://finance.caixin.com/2026-05-28/102448379.html" target="_blank" rel="noopener">10. 财新：4月底公募基金规模冲上39.36万亿元，混合基金增幅最大达10.4%</a></div>
+    <div class="news-meta"><span class="badge badge-caixin">财新 全文</span><span class="time">2026-05-28</span></div>
+    <div class="news-body">截至2026年4月底，公募基金资产净值合计39.36万亿元，首次突破39万亿元大关，较3月底环比增长4.86%。混合基金增幅最大达10.4%，股票基金在连续三月缩水后终于增长至5.28万亿元（+3.23%）。境内公募基金管理机构共165家，市场火热背景下资金持续向权益类资产流入。</div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-title"><a href="https://finance.caixin.com/2026-05-29/102449075.html" target="_blank" rel="noopener">11. 财新：广发证券被判对50亿康美可交债虚假陈述案承担15%连带赔偿</a></div>
+    <div class="news-meta"><span class="badge badge-caixin">财新 全文</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">广州市中级人民法院近日对康美药业原大股东所发"17康02EB"可交换债虚假陈述案作出一审判决，债券主承销商广发证券被判对原告财通基金投资差额损失承担15%连带赔偿责任。这是继2022年康美药业证券欺诈案后又一重大资本市场违规判决，对券商承销业务合规要求具有重要示范意义。</div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-title"><a href="https://finance.caixin.com/2026-05-29/102448729.html" target="_blank" rel="noopener">12. 中信证券拟在港定增160亿元，全部加注国际业务</a></div>
+    <div class="news-meta"><span class="badge badge-caixin">财新 全文</span><span class="time">2026-05-29 今日</span></div>
+    <div class="news-body">中信证券公告拟向大股东中信金控定向发行H股募集不超过160亿元，全部用于增资境外子公司中信证券国际，支持国际化业务发展。在行业"增资潮"背景下，中信证券作为"领头羊"加大国际布局，反映头部券商将国际业务作为下一阶段核心增长极的战略取向。</div>
   </div>
 
   <!-- 宏观分析 -->
@@ -218,15 +230,15 @@
   <div class="analysis-grid">
     <div class="analysis-card">
       <h3>🗺️ 地缘政治动态</h3>
-      <p>霍尔木兹危机是当前全球最大地缘政治变量，布伦特原油从$89反弹至$109，持续向全球通胀传导。美伊停火传言在市场上反复出现又被否认，局势极度脆弱。UAE退出OPEC进一步分化中东能源阵营。中美峰会后贸易缓和预期仍存，但APEC会议揭示双方在关税细节和稀土/芯片议题上仍存实质分歧，"管控竞争"格局短期不变，中美科技供应链持续重构。</p>
+      <p>今日地缘政治最大变量：俄罗斯财政压力剧增（战争超支280亿美元）且前四个月赤字已达GDP 2.5%，克里姆林宫的财政可持续性正受到考验，油价上涨带来的额外收益远不足以弥补缺口。与此同时，乌克兰无人机战术取得突破，战场动态出现有利于乌方的转变。美伊停火谈判持续进展，市场对霍尔木兹解封抱有期待。马斯克在SpaceX IPO静默期的推文可能引发证券法律风险，是本周最大黑天鹅事件之一。</p>
     </div>
     <div class="analysis-card">
       <h3>📊 经济数据与央行动向</h3>
-      <p>美联储新主席Warsh面临就任以来最严峻的通胀开局——核心PCE 3.0%，总PCE 2.8%，均显著偏离2%目标。4票反对是1992年来首次，显示内部加息讨论已实质升温。欧元区综合PMI跌至47.5（31个月低点），滞胀风险上升，欧央行政策两难加剧。中国出口前两月同比增21.8%，但内需依然偏弱，政策托底力度有限。</p>
+      <p>美联储鹰派信号持续强化：堪萨斯城联储主席Schmid明确表示必须传递抗通胀决心，与日本动用创纪录7360亿美元干预外汇形成呼应——美元强势是当前全球宏观最核心的传导机制。公募基金规模冲上39万亿元反映国内资金入市意愿回升，但人民币国际化专家会议结论偏谨慎，资本项目开放仍是瓶颈。意大利GDP意外上修，显示欧洲核心经济体在伊朗战争冲击前仍有韧性。</p>
     </div>
     <div class="analysis-card">
       <h3>📈 市场情绪</h3>
-      <p>美股由AI主题持续驱动创历史新高，Snowflake+36.5%再次确认市场对AI盈利的强烈信心，资金高度集中于科技、AI算力和软件板块。黄金从高位回调但机构目标价维持，反映结构性避险需求未消。油价反弹叠加通胀数据偏高，市场整体处于"AI多头 + 通胀担忧"的撕裂状态，短期脆弱性上升。</p>
+      <p>AI主线仍是美股最强叙事，S&P 500九连涨，"五月卖出"策略又一次失败。但三个潜在压力点值得警惕：①马斯克颠覆SpaceX-Anthropic协议叙事，可能重新定价AI基础设施估值；②蓝色起源爆炸冲击商业航天板块；③日本史上最大外汇干预反映美元走强压力，对新兴市场汇率和资本流动有负面传导。贵金属短期承压（WSJ：黄金白银结算走低），但中长期避险逻辑未变。</p>
     </div>
   </div>
 
@@ -237,29 +249,29 @@
       <div class="invest-icon">🥇</div>
       <div class="invest-name">黄金 Gold</div>
       <div class="invest-dir">📈</div>
-      <span class="invest-label">看多</span>
-      <div class="invest-logic">从ATH $5,589回调至$4,694提供再入场机会；JP摩根Q4目标$5,055，LBMA共识$4,741；央行购金强劲（585吨/季），中长期格局未变。<br><a href="https://goldsilver.com/industry-news/article/gold-price-outlook-may-2026-why-institutional-forecasters-still-see-5000/" target="_blank" rel="noopener">→ 查看机构预测</a></div>
+      <span class="invest-label">看多（中长期）</span>
+      <div class="invest-logic">WSJ：黄金结算走低，短期受美元走强和实际利率上行压制。但俄财政崩裂风险、马斯克推文引发AI估值不确定性——两大新黑天鹅支撑避险需求，逢回调布局。<a href="https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb" target="_blank" rel="noopener">→ WSJ报道</a></div>
     </div>
     <div class="invest-card bull">
       <div class="invest-icon">🥈</div>
       <div class="invest-name">白银 Silver</div>
       <div class="invest-dir">📈</div>
-      <span class="invest-label">看多</span>
-      <div class="invest-logic">ATH $121.64后回调至约$74，JP摩根全年均价预测$81；AI/绿能工业需求 + 六年连续供应赤字；金银比压缩是看多信号。<br><a href="https://goldsilver.com/industry-news/article/silver-price-outlook-may-2026-stop-chasing-the-number/" target="_blank" rel="noopener">→ 查看白银分析</a></div>
+      <span class="invest-label">看多（逢低）</span>
+      <div class="invest-logic">WSJ：白银下跌2.5%，短期承压。但乌克兰无人机战争规模化（大量使用工业电子）+AI/绿能工业需求结构性增长，白银工业属性持续强化，回调是机会。<a href="https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb" target="_blank" rel="noopener">→ WSJ报道</a></div>
     </div>
     <div class="invest-card bull">
       <div class="invest-icon">📈</div>
       <div class="invest-name">美股 S&P 500</div>
       <div class="invest-dir">📈</div>
       <span class="invest-label">看多</span>
-      <div class="invest-logic">7,563点创历史新高，AI盈利驱动强劲；油价回升和加息风险是短期压制，高位波动性上升，逢回调可布局。<br><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-may-28-2026" target="_blank" rel="noopener">→ 市场动态</a></div>
+      <div class="invest-logic">九连涨创历史新高，AI主线主导市场。短期风险：马斯克推文引发SpaceX/AI基础设施估值重估，需警惕；中期美联储鹰派构成压力，但AI盈利对冲。<a href="https://www.bloomberg.com/news/articles/2026-05-28/asian-stocks-to-rise-on-firming-us-iran-sentiment-markets-wrap" target="_blank" rel="noopener">→ Bloomberg报道</a></div>
     </div>
-    <div class="invest-card bull">
+    <div class="invest-card neutral">
       <div class="invest-icon">💻</div>
       <div class="invest-name">纳斯达克 Nasdaq</div>
-      <div class="invest-dir">📈</div>
-      <span class="invest-label">看多</span>
-      <div class="invest-logic">Snowflake+36.5%带动AI软件股全面走强，OpenAI/Anthropic超级融资确认AI资本超周期，科技主线最强。<br><a href="https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html" target="_blank" rel="noopener">→ AI行业动态</a></div>
+      <div class="invest-dir">➡️</div>
+      <span class="invest-label">中性偏多</span>
+      <div class="invest-logic">马斯克推文颠覆SpaceX-Anthropic协议，使AI算力基础设施的长期合同叙事受到质疑。SpaceX IPO不确定性上升，但OpenAI/Anthropic其他生意不受影响，AI软件股仍具支撑。<a href="https://www.ft.com/content/7df0906c-6d9b-4440-b94e-65af0a785f7b" target="_blank" rel="noopener">→ FT报道</a></div>
     </div>
   </div>
 
@@ -269,98 +281,83 @@
   <div class="track-block">
     <h3>🤖 AI 产业</h3>
     <div class="track-item">
-      <strong>OpenAI融资$1220亿估值$852亿，GPT-5.3-Codex发布</strong>
-      亚马逊、英伟达、软银、微软联合锚定，竞争进入"后基准测试时代"，实际效用成为核心评价标准。
-      <a href="https://press.airstreet.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">🔗 Air Street Press</a>
+      <strong>马斯克颠覆SpaceX-Anthropic协议：$450亿合同实为180天短租</strong>
+      FT独家：马斯克在IPO静默期发文称协议仅为"180天，双方可90天通知取消"，颠覆SpaceX招股书的长期合同叙事。可能引发证券法律风险，同时质疑了SpaceX作为AI云计算提供商的商业模式。
+      <a href="https://www.ft.com/content/7df0906c-6d9b-4440-b94e-65af0a785f7b" target="_blank" rel="noopener">🔗 FT全文</a>
     </div>
     <div class="track-item">
-      <strong>Anthropic获谷歌$400亿+亚马逊$50亿，Claude Opus 4.6发布，率先通过32步网络攻击测试</strong>
-      AI安全能力竞争进入新维度，五角大楼禁令可能令Anthropic损失数十亿美元营收，地缘政治成为AI产业核心风险变量。
-      <a href="https://finance.yahoo.com/news/live/tech-stocks-today-anthropic-says-pentagon-ban-could-cost-it-billions-meta-announces-new-ai-chips-134456659.html" target="_blank" rel="noopener">🔗 Yahoo Finance</a>
+      <strong>Anthropic Claude Opus 4.6发布，率先通过32步端对端网络攻击测试</strong>
+      AI安全能力竞争进入新阶段。与微软合作将Claude融入Microsoft 365 Copilot，企业AI应用加速落地。估值逾9000亿美元，超越OpenAI的8520亿美元。
+      <a href="https://press.airstreet.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">🔗 Air Street报道</a>
     </div>
     <div class="track-item">
-      <strong>中国AI实验室廉价模型威胁美国大厂定价权，AI价格战加剧</strong>
-      中国实验室以极低价格提供同等能力模型，CNBC报道称"廉价AI可能颠覆OpenAI和Anthropic的IPO计划"，西方挑战者（Cohere、Mistral）也在推出更小更高效的替代品。
-      <a href="https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html" target="_blank" rel="noopener">🔗 CNBC</a>
-    </div>
-    <div class="track-item">
-      <strong>NVIDIA+IREN达成算力合作，AI基础设施成为国家战略资产</strong>
-      AI算力正从产品竞争升级为基础设施和地缘政治杠杆，算力资产的战略价值持续上升。
-      <a href="https://hipther.com/latest-news/2026/05/08/111451/ai-dispatch-daily-trends-and-innovations-may-8-2026-nvidia-anthropic-petri-and-robo-ai/0/" target="_blank" rel="noopener">🔗 AI Dispatch</a>
+      <strong>蓝色起源火箭爆炸：商业航天竞争格局生变</strong>
+      New Glenn发射台爆炸严重损毁唯一发射台，预计大幅推迟全年12次发射计划，Amazon Leo卫星互联网计划受阻。SpaceX竞争优势进一步扩大，但SpaceX自身面临IPO估值重审压力。
+      <a href="https://www.ft.com/content/11b2eb12-6623-4624-83a6-5d25c905f3e6" target="_blank" rel="noopener">🔗 FT全文</a>
     </div>
   </div>
 
   <div class="track-block">
     <h3>🛒 跨境电商</h3>
     <div class="track-item">
-      <strong>Temu 2025年市占率24%追平亚马逊，转型美国本土履约应对de minimis取消</strong>
-      三年内从不足1%增至24%，创电商史上最快增长纪录。美国取消小额免税政策后，Temu开放US-based卖家本土直供，降低对中国直运的依赖。
+      <strong>Temu转型本土履约，中美贸易框架或降低跨境关税</strong>
+      美国取消de minimis免税后，Temu加速建立美国本土卖家直供体系。中美300亿美元商品关税框架若落地，跨境卖家出口成本有望边际改善，密切跟踪谈判进展。
       <a href="https://www.digitalcommerce360.com/2026/01/22/temu-vs-amazon-cross-border-ecommerce-sales-2025/" target="_blank" rel="noopener">🔗 Digital Commerce 360</a>
     </div>
     <div class="track-item">
-      <strong>亚马逊欧洲推出Haul折扣专区，直接狙击Temu/Shein低价策略</strong>
-      Amazon Haul定位$20以下低价商品，通过移动端App发力，欧洲跨境电商格局进入新一轮竞争。
-      <a href="https://www.indexbox.io/blog/temu-matches-amazon-in-2025-cross-border-e-commerce-market-share/" target="_blank" rel="noopener">🔗 IndexBox</a>
-    </div>
-    <div class="track-item">
-      <strong>中美300亿关税框架若落地，跨境卖家出口成本有望边际改善</strong>
-      目前谈判仍在"原则同意"阶段，建议跨境卖家密切追踪，择机调整选品和供应链布局以获取政策红利。
-      <a href="https://www.cnbc.com/2026/05/23/three-signs-from-apec-that-the-us-china-remain-far-apart-on-trade.html" target="_blank" rel="noopener">🔗 CNBC</a>
+      <strong>日元贬值至160关口：日本跨境消费力受冲击</strong>
+      日本动用730亿美元阻止日元进一步贬值，日元汇率压力直接影响日本消费者购买力，对面向日本市场的跨境电商卖家构成需求侧压力。
+      <a href="https://www.bloomberg.com/news/articles/2026-05-29/japan-used-record-73-6-billion-to-support-yen-in-past-month" target="_blank" rel="noopener">🔗 Bloomberg报道</a>
     </div>
   </div>
 
   <div class="track-block">
     <h3>🎬 文化产业</h3>
     <div class="track-item">
-      <strong>体育版权加速流媒体化，新兴联赛迎来全球曝光窗口</strong>
-      直播体育版权从传统电视全面转向流媒体，新联赛和国际体育内容通过流媒体覆盖全球用户，平台以体育IP差异化竞争，体育内容IP价值持续攀升。
-      <a href="https://www.thewrap.com/industry-news/business/2026-media-entertainment-trends/" target="_blank" rel="noopener">🔗 The Wrap</a>
+      <strong>Farage右翼"Restore Britain"崛起，欧洲政治极化加速</strong>
+      FT：亿万富翁Rupert Lowe的Restore Britain党获马斯克算法加持，在英国选民中获得超预期支持，威胁Reform党6月地方选举。欧洲政治极化趋势正深刻影响内容创作偏好和流媒体内容策略。
+      <a href="https://www.ft.com/content/73126c30-8fd1-414a-afa4-9a8b87a3080a" target="_blank" rel="noopener">🔗 FT全文</a>
     </div>
     <div class="track-item">
-      <strong>"戏院+流媒体"同步上映成为主流，中小成本影视加速数字化</strong>
-      大制作"事件电影"仍吸引影院观众，但中小预算内容基本迁移至数字平台，内容分发策略深度分化。
-      <a href="https://planet.news/article/global-entertainment-industry-may-2026-developments" target="_blank" rel="noopener">🔗 Planet News</a>
-    </div>
-    <div class="track-item">
-      <strong>短视频与创作者经济正式进入主流文化，粉丝社区工业化运营</strong>
-      2026年粉丝社区以工业级别的协调方式影响排行榜，Discord+自动化流量追踪器+发行周图表战役成为标配，中国IP出海窗口持续扩大。
-      <a href="https://www.morninghoney.com/p/the-quiet-mainstreaming-of-digital-entertainment-in-2026s-pop-culture" target="_blank" rel="noopener">🔗 Morning Honey</a>
+      <strong>4月公募基金规模突破39万亿，权益类流入加速，内容IP价值提升</strong>
+      股票基金结束三连降，混合基金大涨10.4%，国内资金入市意愿回升。市场活跃度提升有利于文化产业板块估值修复，内容IP资产配置价值上升。
+      <a href="https://finance.caixin.com/2026-05-28/102448379.html" target="_blank" rel="noopener">🔗 财新全文</a>
     </div>
   </div>
 
   <!-- 其他板块 -->
   <div class="section-title">📊 其他板块方向</div>
   <table class="sector-table">
-    <thead><tr><th>板块</th><th>方向</th><th>核心逻辑</th></tr></thead>
+    <thead><tr><th>板块</th><th>方向</th><th>核心逻辑（基于今日新闻）</th></tr></thead>
     <tbody>
-      <tr><td><strong>🖥️ 科技 / 半导体</strong></td><td><span class="dir-bull">📈 看多</span></td><td>OpenAI/Anthropic超级融资确认AI资本超周期，英伟达算力需求旺盛，Snowflake+36.5%带动AI软件板块，科技主线最强。</td></tr>
-      <tr><td><strong>⛽ 能源 / 大宗商品</strong></td><td><span class="dir-neutral">➡️ 中性</span></td><td>布伦特从$89反弹至$109，但美伊谈判若成功将引发大幅回落；UAE退出OPEC增加不确定性，方向高度依赖地缘走向。</td></tr>
-      <tr><td><strong>🏦 金融 / 银行</strong></td><td><span class="dir-bear">📉 看空</span></td><td>核心PCE 3.0%偏高，美联储新主席加息讨论升温；4票反对显示内部分歧加剧，利率敏感资产承压，降息遥遥无期。</td></tr>
-      <tr><td><strong>🏠 房地产</strong></td><td><span class="dir-bear">📉 看空</span></td><td>高利率持续压制按揭需求，降息时间表推迟；欧洲经济滞胀、中国内需偏弱，全球地产复苏短期无望。</td></tr>
+      <tr><td><strong>🖥️ 科技 / 半导体</strong></td><td><span class="dir-bull">📈 看多</span></td><td>AI主线九连涨，马斯克推文短期扰动但不改AI算力长期逻辑；Anthropic估值9000亿美元再创新高，行业资本超周期未结束。</td></tr>
+      <tr><td><strong>🚀 商业航天</strong></td><td><span class="dir-bear">📉 看空（短期）</span></td><td>蓝色起源火箭爆炸 + SpaceX IPO估值重审双重冲击，商业航天板块短期承压，SpaceX竞争格局重新审视。</td></tr>
+      <tr><td><strong>⛽ 能源 / 大宗商品</strong></td><td><span class="dir-neutral">➡️ 中性</span></td><td>美伊停火谈判进展推动油价回落预期，但日本汇市干预显示全球流动性收紧，大宗商品方向高度依赖美伊谈判结果。</td></tr>
+      <tr><td><strong>🏦 金融 / 银行</strong></td><td><span class="dir-bear">📉 看空</span></td><td>美联储Schmid强化鹰派信号，广发证券被判15%连带赔偿开创先例，国内券商合规成本压力上升，利率敏感资产承压。</td></tr>
+      <tr><td><strong>🏠 房地产</strong></td><td><span class="dir-bear">📉 看空</span></td><td>美元走强 + 美联储拒绝降息，全球按揭利率维持高位；日本外汇干预显示新兴市场承压，全球地产无复苏催化剂。</td></tr>
     </tbody>
   </table>
 
   <!-- 风险提示 -->
   <div class="section-title">⚠️ 风险提示</div>
   <div class="risk-item">
-    <strong>⚠️ 霍尔木兹局势失控风险</strong>
-    <p>若美伊谈判彻底破裂、海峡长期封锁，油价可能重回$130+，触发全球系统性通胀冲击；与此同时黄金短期或因实际利率上行（加息预期）承压回调，构成双重冲击。</p>
+    <strong>⚠️ 马斯克推文引发SpaceX IPO法律风险与AI估值重审</strong>
+    <p>马斯克在IPO静默期公开否认招股书核心财务条款，可能触发证券法律责任。若SpaceX作为AI算力提供商的估值叙事崩塌，将对整个AI基础设施板块估值形成连锁冲击，是本周最大黑天鹅事件。</p>
   </div>
   <div class="risk-item">
-    <strong>⚠️ 美联储意外加息风险</strong>
-    <p>核心PCE持续偏高+新主席鹰派倾向叠加，6月FOMC提前释放加息信号的风险不可忽视，将引发美股和债市双重抛压，黄金/白银短期也可能承压。</p>
+    <strong>⚠️ 美元强势 + 美联储鹰派双重压力下新兴市场汇率风险</strong>
+    <p>日本史上最大单月外汇干预（730亿美元）仍未能稳住日元，显示美元走强压力之大。对新兴市场而言，美元强势 + 资本外流 + 通胀输入三重打击同步发生，人民币及亚洲货币面临系统性压力。</p>
   </div>
   <div class="risk-item">
-    <strong>⚠️ 中美贸易摩擦重燃风险</strong>
-    <p>峰会协议仍处"原则同意"阶段，稀土管制、芯片出口限制、台湾问题任何一方升级，都可能打断修复节奏；跨境电商供应链和AI硬件供应链首当其冲，跨境卖家应保持灵活备案。</p>
+    <strong>⚠️ 俄罗斯财政恶化可能引发战争行为升级</strong>
+    <p>FT独家揭示俄罗斯战争超支280亿美元，财政部已要求冻结其他支出。财政压力剧增可能迫使克里姆林宫在乌战场采取更激进行动以求速战，或制造外部冲突转移注意力，地缘政治尾部风险上升。</p>
   </div>
 
-</div>
+</div><!-- /container -->
 
 <footer>
-  <p>本简报由小田每日新闻简报自动生成，基于公开新闻整合分析，不构成投资建议。</p>
-  <p>数据来源：Bloomberg · Reuters · FT · WSJ · 财新 · CNBC · GoldSilver.com · JP摩根 · Digital Commerce 360 · Air Street Press</p>
-  <p>生成时间：2026年5月29日</p>
+  <p>本简报由<strong>小田每日新闻简报</strong>自动生成 · 数据来源：Bloomberg RSS · Financial Times 全文 · WSJ RSS · 财新 全文</p>
+  <p style="margin-top:4px">生成时间：2026年5月29日 · 基于公开新闻整合分析 · 不构成投资建议</p>
 </footer>
 
 </body>
