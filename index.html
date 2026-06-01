@@ -30,6 +30,17 @@
   .fi-warn { background: rgba(245,158,11,0.25); color: #fbbf24; }
   .fi-neutral { background: rgba(156,163,175,0.2); color: #d1d5db; }
   .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; border-left: 4px solid #3b82f6; padding-left: 12px; margin: 32px 0 16px; }
+  /* MARKET DATA */
+  .market-block { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 28px; }
+  .market-card { background: #fff; border-radius: 12px; padding: 16px 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 3px solid #d4af37; }
+  .market-card.fx { border-top-color: #3b82f6; }
+  .market-label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; display: flex; align-items: center; gap: 5px; }
+  .market-value { font-size: 1.35rem; font-weight: 800; color: #1a1a2e; }
+  .market-unit { font-size: 0.72rem; color: #9ca3af; font-weight: 400; margin-left: 2px; }
+  .market-change { font-size: 0.76rem; font-weight: 600; margin-top: 4px; }
+  .chg-up { color: #16a34a; }
+  .chg-down { color: #dc2626; }
+  .chg-flat { color: #6b7280; }
   .news-card { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid #3b82f6; transition: box-shadow 0.2s; }
   .news-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
   .news-card:nth-child(4n+1) { border-left-color: #3b82f6; }
@@ -138,6 +149,32 @@
       </div>
     </div>
   </div>
+
+  <!-- 市场数据速览 -->
+  <div class="section-title">📊 市场数据速览</div>
+  <div class="market-block">
+    <div class="market-card">
+      <div class="market-label">🥇 黄金 现货</div>
+      <div class="market-value">$4,541<span class="market-unit">/盎司</span></div>
+      <div class="market-change chg-up">▲ 年涨约 +34.3%</div>
+    </div>
+    <div class="market-card fx">
+      <div class="market-label">💵 美元 / 人民币</div>
+      <div class="market-value">≈ 7.18<span class="market-unit">USD/CNY</span></div>
+      <div class="market-change chg-up">▲ 美元走强，人民币承压</div>
+    </div>
+    <div class="market-card fx">
+      <div class="market-label">💵 美元 / 泰铢</div>
+      <div class="market-value">≈ 33.5<span class="market-unit">USD/THB</span></div>
+      <div class="market-change chg-up">▲ 泰铢随美元强势走弱</div>
+    </div>
+    <div class="market-card fx">
+      <div class="market-label">🇨🇳 人民币 / 泰铢</div>
+      <div class="market-value">≈ 4.80<span class="market-unit">CNY/THB</span></div>
+      <div class="market-change chg-flat">＝ 区间震荡 4.77–4.83</div>
+    </div>
+  </div>
+  <p style="font-size:0.76rem;color:#9ca3af;margin:-16px 0 8px;padding-left:2px;">汇率走势：美联储鹰派立场（"廉价时代终结"）推动美元月内持续走强，人民币与泰铢同步承压；金价高位整理但年涨幅仍达34%，避险与抗通胀逻辑支撑。数据为参考值，来源 Trading Economics / Wise / 交易所，实时价格请以交易平台为准。</p>
 
   <div class="section-title">📰 今日要闻</div>
 
