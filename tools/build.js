@@ -96,4 +96,24 @@ ${content}
 fs.writeFileSync(outPath, html, 'utf8');
 console.log(`✅ 已生成完整简报：${outPath}`);
 console.log(`   日期 ${date} ${weekday} · 标签「${label}」`);
+
+// ── 自动导出转发文案（四焦点 + 链接）到桌面 push-<date>.txt
+const stripHtml = s => s.replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&amp;/g, '&').trim();
+const focusRe = /<div class="fi-title">([\s\S]*?)<\/div>\s*<div class="fi-body">([\s\S]*?)<\/div>/g;
+const items = [];
+let fm;
+while ((fm = focusRe.exec(content)) && items.length < 4) {
+  items.push({ title: stripHtml(fm[1]), body: stripHtml(fm[2]) });
+}
+if (items.length) {
+  const pushText = '今日新闻，请查收：\n\n' +
+    items.map((it, i) => `${i + 1}、${it.title}\n${it.body}`).join('\n\n') +
+    '\n\nhttps://bairimenglan1991.github.io/xiaotian-briefing/\n';
+  const pushPath = path.join(desktop, `push-${date}.txt`);
+  fs.writeFileSync(pushPath, pushText, 'utf8');
+  console.log(`✅ 已导出转发文案：${pushPath}（${items.length}条焦点）`);
+} else {
+  console.log('⚠️ 未提取到焦点条目，跳过文案导出（检查片段 focus-item 结构）');
+}
+
 console.log(`   下一步：node tools/publish.js ${date}`);

@@ -39,7 +39,7 @@ label=斯塔默濒临辞职 · 美伊紧张谈判 · 港股逼近熊市 · 新�
 |------|------|
 | `xiaotian-playwright/fetch-all.js` | 合并抓取 market+news + 新鲜度自检告警 |
 | `tools/style.css` | 简报页面共享 CSS（改样式只改这一处） |
-| `tools/build.js <date>` | 内容片段 → 完整自包含 HTML（到桌面） |
+| `tools/build.js <date>` | 内容片段 → 完整自包含 HTML（到桌面）；**同时自动导出转发文案 `push-<date>.txt`（四焦点+链接）到桌面** |
 | `tools/gen-archive.js` | 扫描 archive/*.html 内嵌摘要，重建归档索引 |
 | `tools/publish.js <date>` | 复制 + gen-archive + git 推送，一条命令发布 |
 | `tools/backfill-labels.js` | 一次性：把历史各期摘要回填为 meta（已执行） |
