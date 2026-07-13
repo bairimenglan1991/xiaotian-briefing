@@ -102,7 +102,7 @@ const stripHtml = s => s.replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace
 const focusRe = /<div class="fi-title">([\s\S]*?)<\/div>\s*<div class="fi-body">([\s\S]*?)<\/div>/g;
 const items = [];
 let fm;
-while ((fm = focusRe.exec(content)) && items.length < 4) {
+while ((fm = focusRe.exec(content)) && items.length < 7) {
   items.push({ title: stripHtml(fm[1]), body: stripHtml(fm[2]) });
 }
 if (items.length) {
