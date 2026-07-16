@@ -17,7 +17,7 @@
   .tag{font-size:12px;padding:4px 9px;border:1px solid #46506a;background:#232941;color:#e8ecf5;border-radius:4px}
   .summary{background:#fff;border-left:5px solid #2563eb;padding:18px 20px;border-radius:6px;box-shadow:0 2px 9px rgba(20,30,55,.06);font-weight:650;margin-bottom:26px}
   .section-title{font-size:20px;margin:34px 0 15px;display:flex;align-items:center;gap:9px}.section-title:after{content:"";height:1px;background:#d8dee9;flex:1}
-  .focus-grid,.asset-grid{display:grid;gap:14px}.focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.asset-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .focus-grid,.asset-grid,.industry-grid{display:grid;gap:14px}.focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.asset-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.industry-grid{grid-template-columns:1.35fr .65fr}
   .focus,.asset,.analysis{background:#fff;border:1px solid #e1e6ee;border-radius:7px;padding:18px;box-shadow:0 2px 8px rgba(20,30,55,.05)}
   .focus{border-top:4px solid #2563eb}.focus.alert{border-top-color:#dc2626}.focus.tech{border-top-color:#8b5cf6}.focus.china{border-top-color:#10b981}
   .focus .kicker{font-size:11px;color:#6b7280;font-weight:800;margin-bottom:6px}.focus h3{font-size:16px;margin-bottom:7px}.focus p,.analysis p{font-size:14px;color:#475569}
@@ -26,16 +26,17 @@
   .news-list{display:grid;gap:14px}.news{background:#fff;border:1px solid #e1e6ee;border-left:4px solid #3b82f6;border-radius:6px;padding:19px 21px;box-shadow:0 2px 7px rgba(20,30,55,.04)}
   .news.wsj{border-left-color:#dc2626}.news.bloomberg{border-left-color:#8b5cf6}.news.caixin{border-left-color:#10b981}
   .news h3{font-size:17px;line-height:1.45;margin-bottom:7px}.news h3 a{color:#162033;text-decoration:none}.news h3 a:hover{color:#2563eb;text-decoration:underline}
-  .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px;font-size:12px;color:#7c8799}.badge{padding:2px 8px;border-radius:3px;font-weight:700}.badge.ft{background:#fff0e9;color:#b64922}.badge.wsj{background:#fce8e8;color:#a91d2d}.badge.bb{background:#eeeafe;color:#5b35b5}.badge.cx{background:#e9f7ee;color:#18733b}
+  .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px;font-size:12px;color:#7c8799}.badge{padding:2px 8px;border-radius:3px;font-weight:700}.badge.ft{background:#fff0e9;color:#b64922}.badge.wsj{background:#fce8e8;color:#a91d2d}.badge.bb{background:#eeeafe;color:#5b35b5}.badge.cx{background:#e9f7ee;color:#18733b}.badge.industry{background:#edf8e9;color:#397226}
   .news p{font-size:14px;color:#3f4b5d;margin-top:8px}.facts{margin:10px 0 0 18px}.facts li{font-size:13px;color:#475569;margin:5px 0}.impact{margin-top:12px;padding:10px 12px;background:#f6f8fb;border-radius:5px;font-size:13px;color:#344054}.impact strong{color:#162033}
   .source-link{display:inline-block;margin-top:10px;font-size:12px;color:#2563eb;text-decoration:none;font-weight:750}.source-link:hover{text-decoration:underline}
+  .industry-main,.industry-side{background:#fff;border:1px solid #dfe7dc;border-radius:7px;padding:20px;box-shadow:0 2px 8px rgba(20,30,55,.05)}.industry-main{border-top:4px solid #66a143}.industry-main h3,.industry-side h3{font-size:17px;margin-bottom:9px}.industry-main p,.industry-side p{font-size:14px;color:#475569}.industry-points{margin:12px 0 0 18px}.industry-points li{font-size:13px;color:#475569;margin:7px 0}.source-stack{display:grid;gap:8px;margin-top:14px}.source-stack a{display:block;padding:9px 10px;background:#f4f8f2;border-radius:5px;color:#2f6b21;text-decoration:none;font-size:12px;font-weight:700}.source-stack a:hover{text-decoration:underline}.chain{margin-top:12px}.chain div{padding:9px 10px;border-left:3px solid #86b56b;background:#f7faf5;margin:7px 0;font-size:13px;color:#40513a}
   .analysis-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.analysis h3{font-size:15px;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #e4e8ef}
   .asset{border-top:4px solid #98a2b3}.asset.gold{border-top-color:#d59b20}.asset.silver{border-top-color:#8f9baa}.asset.us{border-top-color:#2c7be5}.asset.ai{border-top-color:#8b5cf6}.asset .symbol{font-size:12px;color:#738096}.asset h3{font-size:17px;margin:3px 0}.asset .direction{font-size:13px;font-weight:800;margin:4px 0 8px}.positive{color:#16824b}.neutral{color:#8a650b}.negative{color:#c13636}.asset p{font-size:13px;color:#4b5563}
   table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e1e6ee;border-radius:6px;overflow:hidden}th{background:#1d2335;color:#fff;text-align:left;font-size:13px;padding:11px 13px}td{font-size:13px;padding:12px 13px;border-bottom:1px solid #e6eaf0;vertical-align:top}tr:last-child td{border-bottom:0}
   .risk{background:#fff8e8;border-left:4px solid #f59e0b;border-radius:5px;padding:14px 17px;margin:10px 0}.risk h3{font-size:14px;margin-bottom:4px}.risk p{font-size:13px;color:#5c4b2a}
   .method{font-size:12px;color:#64748b;background:#eef2f6;padding:14px;border-radius:5px;margin-top:28px}
   footer{background:#171b2d;color:#aeb8ce;text-align:center;padding:24px;font-size:12px}footer a{color:#75a9ff}
-  @media(max-width:820px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.analysis-grid{grid-template-columns:1fr}.signal-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.focus-grid{grid-template-columns:1fr}nav .date{display:none}}
+  @media(max-width:820px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.analysis-grid,.industry-grid{grid-template-columns:1fr}.signal-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.focus-grid{grid-template-columns:1fr}nav .date{display:none}}
   @media(max-width:520px){.container{padding:16px 12px 42px}.hero{padding:26px 20px}.hero h1{font-size:24px}.asset-grid,.signal-strip{grid-template-columns:1fr}.news{padding:15px}.section-title{font-size:18px}}
 </style>
 </head>
@@ -45,7 +46,7 @@
   <section class="hero">
     <h1>小田每日新闻简报</h1>
     <p>全球政治经济走向 · 贵金属与美股 · AI产业 · 中国金融</p>
-    <div class="tags"><span class="tag">FT 全文</span><span class="tag">WSJ 全文</span><span class="tag">Bloomberg 全文</span><span class="tag">财新全文</span></div>
+    <div class="tags"><span class="tag">FT 全文</span><span class="tag">WSJ 全文</span><span class="tag">Bloomberg 全文</span><span class="tag">财新全文</span><span class="tag">甜叶菊产业</span></div>
   </section>
 
   <div class="summary">政治经济意义：中东风险正从局部军事冲突转化为全球能源、通胀与货币政策问题；与此同时，美国以关税和产业政策推动先进芯片本土化，中国则面临流动性充足但进入实体经济效率不足的结构性矛盾。</div>
@@ -105,6 +106,32 @@
     </article>
   </section>
 
+  <h2 class="section-title">甜叶菊产业观察</h2>
+  <section class="industry-grid">
+    <article class="industry-main">
+      <div class="meta"><span class="badge industry">天然代糖产业</span><span>2026年6月至7月</span></div>
+      <h3>行业整合与Reb M技术升级同步加速</h3>
+      <p>Ingredion已提出现金收购Tate &amp; Lyle。交易若完成，将把PureCircle甜叶菊能力、三氯蔗糖、阿洛酮糖、膳食纤维及质构解决方案放入同一平台，全球减糖配方市场的集中度和综合服务能力将进一步提高。</p>
+      <ul class="industry-points">
+        <li><strong>需求端：</strong>饮料、乳品、烘焙和零食企业正把减糖从单次配方调整转为长期产品策略，天然标签继续支持甜菊糖苷需求。</li>
+        <li><strong>技术端：</strong>竞争重心由传统Reb A叶片提取，向口感更接近蔗糖的Reb M、酶转化及发酵生产转移。</li>
+        <li><strong>监管端：</strong>美国FDA资料显示，高纯度甜菊糖苷与发酵来源产品已有明确GRAS审查路径，但整叶和粗提物不能等同于获认可的高纯度甜菊糖苷。</li>
+        <li><strong>产业推断：</strong>上游种植与普通提取物仍有需求，但利润可能更多流向菌种、酶法工艺、复配配方、口感优化和全球法规服务。</li>
+      </ul>
+      <div class="impact"><strong>投资含义：</strong>甜叶菊产业并非简单的“种植面积增长”逻辑。更值得关注的是拥有高纯度Reb M、发酵或生物转化能力、食品大客户认证以及复配解决方案的企业。</div>
+    </article>
+    <aside class="industry-side">
+      <h3>产业链观察</h3>
+      <div class="chain"><div>上游：种苗、甜叶菊种植、叶片采购</div><div>中游：提取纯化、酶转化、精密发酵</div><div>下游：饮料、乳品、烘焙、营养与个护配方</div></div>
+      <div class="source-stack">
+        <a href="https://ir.ingredionincorporated.com/news-releases/news-release-details/ingredion-announces-recommended-all-cash-acquisition-tate-lyle" target="_blank" rel="noopener">Ingredion：拟收购Tate &amp; Lyle →</a>
+        <a href="https://www.tateandlyle.com/news/tate-lyle-expands-collaboration-bioharvest-accelerate-next-generation-sweetener-innovation" target="_blank" rel="noopener">Tate &amp; Lyle：扩大下一代甜味剂合作 →</a>
+        <a href="https://www.accessdata.fda.gov/cms_ia/importalert_119.html" target="_blank" rel="noopener">美国FDA：甜菊糖苷监管说明 →</a>
+        <a href="https://www.foodnavigator.com/Article/2026/06/23/ingredion-tate-lyle-deal-reshapes-ingredients-market/" target="_blank" rel="noopener">FoodNavigator：交易如何重塑甜味剂市场 →</a>
+      </div>
+    </aside>
+  </section>
+
   <h2 class="section-title">宏观政治经济分析</h2>
   <section class="analysis-grid">
     <article class="analysis"><h3>地缘政治</h3><p>伊朗问题已从核谈判和区域军事冲突扩大为海上运输与能源安全问题。美国若投入地面部队，冲突成本、持续时间和外溢范围都将明显扩大。</p></article>
@@ -128,6 +155,7 @@
       <tr><td>军工</td><td class="positive">偏多</td><td>弹药消耗、海上护航和中东部署需求增加。</td></tr>
       <tr><td>航空 / 运输</td><td class="negative">偏空</td><td>燃油成本和航线安全成本上升。</td></tr>
       <tr><td>半导体设备 / 封装</td><td class="positive">偏多</td><td>台积电美国扩建带来长期设备、工程和先进封装需求。</td></tr>
+      <tr><td>甜叶菊 / 天然代糖</td><td class="positive">结构性偏多</td><td>减糖和清洁标签需求延续；高纯度Reb M、生物转化、发酵及复配服务优于普通提取物。</td></tr>
       <tr><td>中国银行 / 理财</td><td class="neutral">中性偏谨慎</td><td>负债成本、同业存单和资管回流路径可能面临更严格监管。</td></tr>
       <tr><td>中国权益资产</td><td class="neutral">结构性机会</td><td>资管持股增长明显，但仍需观察资金能否转化为实体需求和盈利改善。</td></tr>
     </tbody>
@@ -138,7 +166,7 @@
   <div class="risk"><h3>通胀重新加速</h3><p>能源冲击若持续，央行可能推迟降息甚至重新转鹰，对美股估值、长债及房地产形成压力。</p></div>
   <div class="risk"><h3>AI资本开支回报不及预期</h3><p>芯片产能区域化提高成本和折旧压力，若AI收入兑现放缓，产业链估值可能重新定价。</p></div>
 
-  <div class="method">数据范围：2026年7月15日至16日。本文基于用户会员权限下读取的FT、WSJ、Bloomberg和财新完整正文进行提炼；摘要不替代原文，事实与投资判断已分开呈现，不构成投资建议。</div>
+  <div class="method">数据范围：2026年7月15日至16日，甜叶菊专题补充2026年5月至6月产业资料。本文基于用户会员权限下读取的FT、WSJ、Bloomberg和财新完整正文，并结合Ingredion、Tate &amp; Lyle、美国FDA及行业媒体资料进行提炼；摘要不替代原文，事实与投资判断已分开呈现，不构成投资建议。</div>
 </main>
 <footer>小田每日新闻简报 · 2026年7月16日 · <a href="archive/index.html">历史归档</a></footer>
 </body>
