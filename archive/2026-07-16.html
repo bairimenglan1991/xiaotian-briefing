@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="briefing-label" content="美联储降息预期回暖 · SpaceX跌破发行价 · TSMC验证AI景气 · 中国融资结构转型">
+<meta name="description" content="小田每日新闻简报：FT、WSJ、Bloomberg、财新会员全文精读与投资影响分析">
+<meta name="briefing-label" content="伊朗冲突升级 · 霍尔木兹风险 · TSMC美国扩产 · 中国资管资金传导">
 <title>小田每日新闻简报 - 2026年7月16日</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
@@ -12,110 +13,133 @@
   nav .brand{font-size:18px;font-weight:800}nav .brand span{color:#71a7ff}nav .date{font-size:13px;color:#aeb8ce}
   .container{max-width:1040px;margin:0 auto;padding:26px 20px 60px}
   .hero{background:#171b2d;color:#fff;padding:34px 36px;border-radius:8px;margin-bottom:22px;border-bottom:5px solid #ffb547}
-  .hero h1{font-size:30px;line-height:1.25;margin-bottom:10px}.hero p{color:#c5cede;font-size:14px}.hero .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .hero h1{font-size:30px;line-height:1.25;margin-bottom:10px}.hero p{color:#c5cede;font-size:14px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
   .tag{font-size:12px;padding:4px 9px;border:1px solid #46506a;background:#232941;color:#e8ecf5;border-radius:4px}
-  .summary{background:#fff;border-left:5px solid #2563eb;padding:18px 20px;border-radius:6px;box-shadow:0 2px 9px rgba(20,30,55,.06);font-weight:600;margin-bottom:26px}
+  .summary{background:#fff;border-left:5px solid #2563eb;padding:18px 20px;border-radius:6px;box-shadow:0 2px 9px rgba(20,30,55,.06);font-weight:650;margin-bottom:26px}
   .section-title{font-size:20px;margin:34px 0 15px;display:flex;align-items:center;gap:9px}.section-title:after{content:"";height:1px;background:#d8dee9;flex:1}
-  .focus-grid,.asset-grid,.track-grid{display:grid;gap:14px}.focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.asset-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.track-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .focus,.asset,.track,.analysis{background:#fff;border:1px solid #e1e6ee;border-radius:7px;padding:18px;box-shadow:0 2px 8px rgba(20,30,55,.05)}
-  .focus{border-top:4px solid #2563eb}.focus .kicker{font-size:11px;color:#6b7280;text-transform:uppercase;font-weight:800;margin-bottom:6px}.focus h3{font-size:16px;margin-bottom:7px}.focus p,.track p,.analysis p{font-size:14px;color:#475569}
-  .market-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.market-item{background:#20263a;color:#fff;padding:14px;border-radius:6px}.market-item .name{font-size:11px;color:#aeb8ce}.market-item .value{font-size:18px;font-weight:800;margin-top:3px}.market-item .note{font-size:11px;color:#9fd0b5;margin-top:2px}
-  .news-list{display:grid;gap:12px}.news{background:#fff;border:1px solid #e1e6ee;border-left:4px solid #3b82f6;border-radius:6px;padding:17px 19px;box-shadow:0 2px 7px rgba(20,30,55,.04)}
-  .news:nth-child(3n+2){border-left-color:#10b981}.news:nth-child(3n){border-left-color:#f59e0b}.news h3{font-size:16px;line-height:1.45;margin-bottom:7px}.news h3 a{color:#162033;text-decoration:none}.news h3 a:hover{color:#2563eb;text-decoration:underline}.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px;font-size:12px;color:#7c8799}
-  .badge{padding:2px 8px;border-radius:3px;background:#eaf1ff;color:#1d4ed8;font-weight:700}.badge.ft{background:#fff0e9;color:#b64922}.badge.cx{background:#fff0f1;color:#b42335}.badge.rt{background:#fff4df;color:#9a5d00}.badge.off{background:#e9f7ee;color:#18733b}
-  .news p{font-size:14px;color:#3f4b5d}.source-link{display:inline-block;margin-top:8px;font-size:12px;color:#2563eb;text-decoration:none;font-weight:700}.source-link:hover{text-decoration:underline}
+  .focus-grid,.asset-grid{display:grid;gap:14px}.focus-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.asset-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .focus,.asset,.analysis{background:#fff;border:1px solid #e1e6ee;border-radius:7px;padding:18px;box-shadow:0 2px 8px rgba(20,30,55,.05)}
+  .focus{border-top:4px solid #2563eb}.focus.alert{border-top-color:#dc2626}.focus.tech{border-top-color:#8b5cf6}.focus.china{border-top-color:#10b981}
+  .focus .kicker{font-size:11px;color:#6b7280;font-weight:800;margin-bottom:6px}.focus h3{font-size:16px;margin-bottom:7px}.focus p,.analysis p{font-size:14px;color:#475569}
+  .signal-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+  .signal{background:#20263a;color:#fff;padding:14px;border-radius:6px}.signal .name{font-size:11px;color:#aeb8ce}.signal .value{font-size:17px;font-weight:800;margin-top:3px}.signal .note{font-size:11px;color:#b9c4d8;margin-top:2px}.signal .up{color:#7ee2a8}.signal .mid{color:#ffd37a}
+  .news-list{display:grid;gap:14px}.news{background:#fff;border:1px solid #e1e6ee;border-left:4px solid #3b82f6;border-radius:6px;padding:19px 21px;box-shadow:0 2px 7px rgba(20,30,55,.04)}
+  .news.wsj{border-left-color:#dc2626}.news.bloomberg{border-left-color:#8b5cf6}.news.caixin{border-left-color:#10b981}
+  .news h3{font-size:17px;line-height:1.45;margin-bottom:7px}.news h3 a{color:#162033;text-decoration:none}.news h3 a:hover{color:#2563eb;text-decoration:underline}
+  .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:10px;font-size:12px;color:#7c8799}.badge{padding:2px 8px;border-radius:3px;font-weight:700}.badge.ft{background:#fff0e9;color:#b64922}.badge.wsj{background:#fce8e8;color:#a91d2d}.badge.bb{background:#eeeafe;color:#5b35b5}.badge.cx{background:#e9f7ee;color:#18733b}
+  .news p{font-size:14px;color:#3f4b5d;margin-top:8px}.facts{margin:10px 0 0 18px}.facts li{font-size:13px;color:#475569;margin:5px 0}.impact{margin-top:12px;padding:10px 12px;background:#f6f8fb;border-radius:5px;font-size:13px;color:#344054}.impact strong{color:#162033}
+  .source-link{display:inline-block;margin-top:10px;font-size:12px;color:#2563eb;text-decoration:none;font-weight:750}.source-link:hover{text-decoration:underline}
   .analysis-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.analysis h3{font-size:15px;margin-bottom:8px;padding-bottom:8px;border-bottom:1px solid #e4e8ef}
-  .asset{text-align:left;border-top:4px solid #98a2b3}.asset.gold{border-top-color:#d59b20}.asset.silver{border-top-color:#8f9baa}.asset.us{border-top-color:#2c7be5}.asset.ai{border-top-color:#8b5cf6}.asset .symbol{font-size:12px;color:#738096}.asset h3{font-size:17px;margin:3px 0}.asset .price{font-size:23px;font-weight:850}.asset .direction{font-size:13px;font-weight:800;color:#16824b;margin:4px 0 8px}.asset p{font-size:13px;color:#4b5563}
-  .track h3{font-size:16px;margin-bottom:9px}.track ul{padding-left:18px}.track li{font-size:13px;color:#475569;margin:7px 0}.track a{color:#2563eb}
-  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e1e6ee;border-radius:6px;overflow:hidden}th{background:#1d2335;color:#fff;text-align:left;font-size:13px;padding:11px 13px}td{font-size:13px;padding:12px 13px;border-bottom:1px solid #e6eaf0;vertical-align:top}tr:last-child td{border-bottom:0}.up{color:#16824b;font-weight:800}.mid{color:#7b5e13;font-weight:800}.down{color:#c13636;font-weight:800}
+  .asset{border-top:4px solid #98a2b3}.asset.gold{border-top-color:#d59b20}.asset.silver{border-top-color:#8f9baa}.asset.us{border-top-color:#2c7be5}.asset.ai{border-top-color:#8b5cf6}.asset .symbol{font-size:12px;color:#738096}.asset h3{font-size:17px;margin:3px 0}.asset .direction{font-size:13px;font-weight:800;margin:4px 0 8px}.positive{color:#16824b}.neutral{color:#8a650b}.negative{color:#c13636}.asset p{font-size:13px;color:#4b5563}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e1e6ee;border-radius:6px;overflow:hidden}th{background:#1d2335;color:#fff;text-align:left;font-size:13px;padding:11px 13px}td{font-size:13px;padding:12px 13px;border-bottom:1px solid #e6eaf0;vertical-align:top}tr:last-child td{border-bottom:0}
   .risk{background:#fff8e8;border-left:4px solid #f59e0b;border-radius:5px;padding:14px 17px;margin:10px 0}.risk h3{font-size:14px;margin-bottom:4px}.risk p{font-size:13px;color:#5c4b2a}
   .method{font-size:12px;color:#64748b;background:#eef2f6;padding:14px;border-radius:5px;margin-top:28px}
   footer{background:#171b2d;color:#aeb8ce;text-align:center;padding:24px;font-size:12px}footer a{color:#75a9ff}
-  @media(max-width:820px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.track-grid,.analysis-grid{grid-template-columns:1fr}.market-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.focus-grid{grid-template-columns:1fr}nav .date{display:none}}
-  @media(max-width:520px){.container{padding:16px 12px 42px}.hero{padding:26px 20px}.hero h1{font-size:24px}.asset-grid{grid-template-columns:1fr}.market-strip{grid-template-columns:1fr 1fr}.news{padding:15px}.section-title{font-size:18px}}
+  @media(max-width:820px){.asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.analysis-grid{grid-template-columns:1fr}.signal-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.focus-grid{grid-template-columns:1fr}nav .date{display:none}}
+  @media(max-width:520px){.container{padding:16px 12px 42px}.hero{padding:26px 20px}.hero h1{font-size:24px}.asset-grid,.signal-strip{grid-template-columns:1fr}.news{padding:15px}.section-title{font-size:18px}}
 </style>
 </head>
 <body>
-<nav><div class="brand">小田<span>每日简报</span></div><div class="date">2026年7月16日 星期四 · 过去24小时</div></nav>
+<nav><div class="brand">小田<span>每日简报</span></div><div class="date">2026年7月16日 星期四 · 会员全文精读版</div></nav>
 <main class="container">
   <section class="hero">
     <h1>小田每日新闻简报</h1>
-    <p>全球政治经济走向 · 贵金属与美股 · AI、跨境电商及文化产业</p>
-    <div class="tags"><span class="tag">FT 会员全文</span><span class="tag">Reuters</span><span class="tag">财新会员内容</span><span class="tag">市场数据 7月16日更新</span></div>
+    <p>全球政治经济走向 · 贵金属与美股 · AI产业 · 中国金融</p>
+    <div class="tags"><span class="tag">FT 全文</span><span class="tag">WSJ 全文</span><span class="tag">Bloomberg 全文</span><span class="tag">财新全文</span></div>
   </section>
 
-  <div class="summary">政治经济意义：美国通胀边际降温，但关税、能源与AI投资仍构成中期价格压力；资本继续向AI与支付基础设施集中，中国则以结构性再贷款、直接融资和离岸人民币市场改善资金传导。</div>
+  <div class="summary">政治经济意义：中东风险正从局部军事冲突转化为全球能源、通胀与货币政策问题；与此同时，美国以关税和产业政策推动先进芯片本土化，中国则面临流动性充足但进入实体经济效率不足的结构性矛盾。</div>
 
   <h2 class="section-title">今日焦点</h2>
   <section class="focus-grid">
-    <article class="focus"><div class="kicker">货币政策</div><h3>美国PPI回落，7月加息概率下降</h3><p>6月总体PPI环比下降0.3%，核心指标仅升0.1%。美联储Williams仍称通胀“无疑过高”，但认为高点可能已过。</p></article>
-    <article class="focus"><div class="kicker">AI估值</div><h3>SpaceX跌破IPO价，万亿美元市值蒸发</h3><p>AI与太空叙事仍强，但高利率环境开始迫使市场重新审视远期盈利和巨额资本开支。</p></article>
-    <article class="focus"><div class="kicker">半导体</div><h3>TSMC预计连续第五季创纪录盈利</h3><p>AI基础设施需求继续拉动先进制程与CoWoS，2026年资本开支指引维持520亿至560亿美元高位。</p></article>
-    <article class="focus"><div class="kicker">中国金融</div><h3>贷款增速放缓，融资结构转向债券与直接融资</h3><p>上半年人民币贷款新增10.72万亿元；央行强调单看贷款已不足以反映整体融资条件。</p></article>
+    <article class="focus alert"><div class="kicker">地缘政治</div><h3>美国对伊朗行动面临升级节点</h3><p>WSJ披露白宫讨论扩大空袭、攻击地下核设施及夺取伊朗岛屿；FT援引美国前防长判断，单靠空袭难以迫使伊朗让步。</p></article>
+    <article class="focus alert"><div class="kicker">能源与通胀</div><h3>霍尔木兹风险成为全球价格主线</h3><p>海峡承担全球约20%的石油运输。若封锁持续或能源设施遭打击，油价、通胀预期和长端利率可能同时上行。</p></article>
+    <article class="focus tech"><div class="kicker">AI与半导体</div><h3>台积电美国投资扩大至2650亿美元</h3><p>规划最终形成10座晶圆厂和2座封装设施，先进制程产能进一步向美国转移，AI供应链本土化进入新阶段。</p></article>
+    <article class="focus china"><div class="kicker">中国金融</div><h3>资管规模高增暴露资金传导问题</h3><p>资管产品达到124.8万亿元，同比增长12.7%。央行关注资金在金融体系内循环以及银行负债成本回升。</p></article>
   </section>
 
-  <h2 class="section-title">市场快照</h2>
-  <section class="market-strip">
-    <div class="market-item"><div class="name">黄金</div><div class="value">$4,037.3</div><div class="note">美元/盎司 · 7月16日</div></div>
-    <div class="market-item"><div class="name">白银</div><div class="value">$57.15</div><div class="note">美元/盎司</div></div>
-    <div class="market-item"><div class="name">USD/CNY</div><div class="value">6.7783</div><div class="note">人民币偏强区间</div></div>
-    <div class="market-item"><div class="name">USD/JPY</div><div class="value">162.16</div><div class="note">日元干预压力仍在</div></div>
-    <div class="market-item"><div class="name">EUR/USD</div><div class="value">1.1449</div><div class="note">欧元相对坚挺</div></div>
+  <h2 class="section-title">资产信号</h2>
+  <section class="signal-strip">
+    <div class="signal"><div class="name">黄金</div><div class="value up">偏多</div><div class="note">战争与通胀对冲需求</div></div>
+    <div class="signal"><div class="name">白银</div><div class="value mid">中性偏多</div><div class="note">避险与工业周期并存</div></div>
+    <div class="signal"><div class="name">美股</div><div class="value mid">高波动</div><div class="note">AI景气对冲利率压力</div></div>
+    <div class="signal"><div class="name">AI半导体</div><div class="value up">结构性偏多</div><div class="note">产能与资本开支持续扩张</div></div>
   </section>
 
-  <h2 class="section-title">今日要闻</h2>
+  <h2 class="section-title">四家全文精读</h2>
   <section class="news-list">
-    <article class="news"><h3><a href="https://www.axios.com/2026/07/15/warsh-inflation-ppi-rates" target="_blank" rel="noopener">1. 美国6月PPI环比下降0.3%，市场削减7月加息押注</a></h3><div class="meta"><span class="badge off">Axios / 美国劳工数据</span><span>7月15日</span></div><p>总体生产者价格指数下降0.3%，剔除食品、能源和贸易服务的核心指标仅上涨0.1%。数据为美联储按兵不动提供空间，但关税价格传导尚未结束。</p><a class="source-link" href="https://www.axios.com/2026/07/15/warsh-inflation-ppi-rates" target="_blank" rel="noopener">查看原文 →</a></article>
-    <article class="news"><h3><a href="https://ae.marketscreener.com/news/fed-s-williams-unquestionably-too-high-inflation-may-soon-subside-ce7f5ed2d888f720" target="_blank" rel="noopener">2. Williams：通胀仍“无疑过高”，但可能已见顶</a></h3><div class="meta"><span class="badge rt">Reuters</span><span>7月15日</span></div><p>纽约联储主席指出，关税、供应链、能源冲击和AI投资共同推升价格，但货币政策位置足以引导通胀回落。市场主线从“是否再加息”转向“高利率维持多久”。</p><a class="source-link" href="https://ae.marketscreener.com/news/fed-s-williams-unquestionably-too-high-inflation-may-soon-subside-ce7f5ed2d888f720" target="_blank" rel="noopener">查看Reuters转引 →</a></article>
-    <article class="news"><h3><a href="https://www.ft.com/content/54d17925-a1d3-4bae-a1bc-a325df7577dd" target="_blank" rel="noopener">3. 英国政局重组：Shabana Mahmood预计出任财政大臣</a></h3><div class="meta"><span class="badge ft">Financial Times</span><span>7月16日</span></div><p>FT报道，Andy Burnham组阁后预计任命现任内政大臣Mahmood掌管财政部。英国国债对此反应积极，但秋季预算、潜在增税及财富税讨论将决定市场能否延续信心。</p><a class="source-link" href="https://www.ft.com/content/54d17925-a1d3-4bae-a1bc-a325df7577dd" target="_blank" rel="noopener">查看FT原文 →</a></article>
-    <article class="news"><h3><a href="https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede" target="_blank" rel="noopener">4. SpaceX跌破135美元IPO价，较高点蒸发逾1万亿美元市值</a></h3><div class="meta"><span class="badge ft">Financial Times</span><span>7月15日</span></div><p>SpaceX自6月盘中高点225美元回落约40%，债券亦走弱。AI相关高估值公司正同时面对利率上行和资本开支回报率审查。</p><a class="source-link" href="https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede" target="_blank" rel="noopener">查看FT原文 →</a></article>
-    <article class="news"><h3><a href="https://au.marketscreener.com/news/tsmc-s-second-quarter-profit-seen-hitting-record-on-ai-boom-ce7f5ed2dc8bff22" target="_blank" rel="noopener">5. TSMC预计二季度净利润增长约59%，AI需求支撑第五季纪录</a></h3><div class="meta"><span class="badge rt">Reuters</span><span>7月16日</span></div><p>先进AI芯片、2纳米和3纳米制程及CoWoS封装需求继续旺盛。公司二季度收入已同比增长36%至约396亿美元，成为全球AI资本周期的重要验证点。</p><a class="source-link" href="https://au.marketscreener.com/news/tsmc-s-second-quarter-profit-seen-hitting-record-on-ai-boom-ce7f5ed2dc8bff22" target="_blank" rel="noopener">查看Reuters转引 →</a></article>
-    <article class="news"><h3><a href="https://www.ft.com/content/3738e814-9470-4d7d-94a6-ac5e001a968e" target="_blank" rel="noopener">6. Stripe与Advent提出530亿美元收购PayPal</a></h3><div class="meta"><span class="badge ft">FT / Reuters</span><span>7月15日</span></div><p>报价每股60.50美元，较前一交易日收盘溢价约28%，据称有500亿美元银行融资支持。交易若推进，将把Stripe的商户基础设施与PayPal逾4亿消费者账户整合。</p><a class="source-link" href="https://www.ft.com/content/3738e814-9470-4d7d-94a6-ac5e001a968e" target="_blank" rel="noopener">查看FT原文 →</a></article>
-    <article class="news"><h3><a href="https://finance.caixin.com/2026-07-15/102464533.html" target="_blank" rel="noopener">7. 中国6月新增人民币贷款1.61万亿元，低于市场预期</a></h3><div class="meta"><span class="badge cx">财新</span><span>7月15日</span></div><p>上半年人民币贷款新增10.72万亿元，6月数据低于财新调查的1.88万亿元均值。央行强调应结合债券、利率和融资结构理解社会融资条件，企业直接融资占比上升。</p><a class="source-link" href="https://finance.caixin.com/2026-07-15/102464533.html" target="_blank" rel="noopener">查看财新原文 →</a></article>
-    <article class="news"><h3><a href="https://finance.caixin.com/2026-07-15/102464559.html" target="_blank" rel="noopener">8. 中国资管规模增至124.8万亿元，央行关注传导效率</a></h3><div class="meta"><span class="badge cx">财新</span><span>7月15日</span></div><p>6月末资管产品资产同比增长12.7%，显著快于社融、M2、存款和贷款。监管重点不是压制资管，而是减少削弱货币政策传导的不合理行为。</p><a class="source-link" href="https://finance.caixin.com/2026-07-15/102464559.html" target="_blank" rel="noopener">查看财新原文 →</a></article>
-    <article class="news"><h3><a href="https://finance.caixin.com/2026-07-15/102464551.html" target="_blank" rel="noopener">9. 淡马锡在华敞口创五年最大增幅，聚焦AI与生命科学</a></h3><div class="meta"><span class="badge cx">财新</span><span>7月15日</span></div><p>淡马锡年度组合净值达5180亿新元，一年期股东回报10.5%。其中国团队认为，中国制造竞争力已确立，AI和生命科学创新正在重塑医药与产业投资。</p><a class="source-link" href="https://finance.caixin.com/2026-07-15/102464551.html" target="_blank" rel="noopener">查看财新原文 →</a></article>
-    <article class="news"><h3><a href="https://finance.caixin.com/2026-07-15/102464508.html" target="_blank" rel="noopener">10. 央行提出离岸人民币市场四条建设路径</a></h3><div class="meta"><span class="badge cx">财新</span><span>7月15日</span></div><p>政策方向包括央行互换、市场融资渠道、银行跨境流动性和企业个人跨境使用。香港常备互换安排相关人民币业务资金规模近期增至5000亿元。</p><a class="source-link" href="https://finance.caixin.com/2026-07-15/102464508.html" target="_blank" rel="noopener">查看财新原文 →</a></article>
+    <article class="news">
+      <h3><a href="https://www.ft.com/content/80245363-32d8-4fe6-805f-c4e3dec6279c" target="_blank" rel="noopener">1. 美国前防长警告：空袭无法赢得对伊战争</a></h3>
+      <div class="meta"><span class="badge ft">Financial Times</span><span>7月16日 · Abigail Hauslohner</span></div>
+      <p>美国前防长埃斯珀认为，扩大空袭不足以迫使伊朗放弃对霍尔木兹海峡的控制。更有效的路径可能是联合盟友实施长期、全面的经济压力，但这需要时间、纪律和国际支持。</p>
+      <ul class="facts"><li>霍尔木兹海峡承担全球约20%的石油运输。</li><li>报道时布伦特原油7月以来上涨约16%，至每桶85美元附近。</li><li>美国商业原油库存已降至1984年以来最低水平。</li><li>长期战争还会消耗弹药库存，影响美国应对其他战略竞争的准备。</li></ul>
+      <div class="impact"><strong>市场含义：</strong>能源价格和通胀上行风险增加，黄金获得避险支撑；美联储宽松空间可能受到压缩。</div>
+      <a class="source-link" href="https://www.ft.com/content/80245363-32d8-4fe6-805f-c4e3dec6279c" target="_blank" rel="noopener">阅读FT原文 →</a>
+    </article>
+
+    <article class="news wsj">
+      <h3><a href="https://www.wsj.com/world/middle-east/trump-leans-toward-expanding-u-s-military-operations-in-iran-6c230462" target="_blank" rel="noopener">2. 特朗普倾向扩大美国在伊朗的军事行动</a></h3>
+      <div class="meta"><span class="badge wsj">The Wall Street Journal</span><span>7月15日更新 · Alexander Ward / Laurence Norman</span></div>
+      <p>白宫讨论的新方案包括扩大空袭、攻击Pickaxe Mountain地下设施、派地面部队夺取哈尔克岛或霍尔木兹海峡附近岛屿。特朗普尚未最终决定，并继续把军事升级作为迫使伊朗重返谈判的筹码。</p>
+      <ul class="facts"><li>Pickaxe Mountain隧道位于地下约300至475英尺，常规钻地弹未必有效。</li><li>哈尔克岛是伊朗主要石油出口枢纽，占领行动会使美军直接暴露于导弹和无人机攻击。</li><li>美国已恢复港口封锁并连续多日发动打击。</li><li>升级可能推高汽油价格，并影响美国中期选举环境。</li></ul>
+      <div class="impact"><strong>市场含义：</strong>夺岛或打击能源设施属于油价的极端上行情景，能源、军工和黄金受益，航空、消费和长久期科技股承压。</div>
+      <a class="source-link" href="https://www.wsj.com/world/middle-east/trump-leans-toward-expanding-u-s-military-operations-in-iran-6c230462" target="_blank" rel="noopener">阅读WSJ原文 →</a>
+    </article>
+
+    <article class="news bloomberg">
+      <h3><a href="https://www.bloomberg.com/news/articles/2026-07-16/tsmc-to-spend-265-billion-on-us-buildout-in-key-trump-deal" target="_blank" rel="noopener">3. 台积电把美国投资计划扩大至2650亿美元</a></h3>
+      <div class="meta"><span class="badge bb">Bloomberg</span><span>7月16日 · Hadriana Lowenkron / Maggie Eastland</span></div>
+      <p>台积电将追加1000亿美元美国投资，规划最终形成10座晶圆厂和2座封装设施。新增项目主要面向2纳米先进逻辑芯片，但设施组合仍可能随市场需求调整。</p>
+      <ul class="facts"><li>美国希望降低先进芯片对台湾单一产地的依赖。</li><li>美台协议把台湾商品关税降至15%，交换条件包括约2500亿美元对美直接投资。</li><li>台积电希望更接近英伟达等美国AI客户。</li><li>亚利桑那首座工厂已量产4纳米芯片，第二座预计生产3纳米芯片。</li></ul>
+      <div class="impact"><strong>市场含义：</strong>利好美国半导体设备、先进封装、厂房、电力和数据中心基础设施；台湾本土供应链面临成本与产能外迁压力。</div>
+      <a class="source-link" href="https://www.bloomberg.com/news/articles/2026-07-16/tsmc-to-spend-265-billion-on-us-buildout-in-key-trump-deal" target="_blank" rel="noopener">阅读Bloomberg原文 →</a>
+    </article>
+
+    <article class="news caixin">
+      <h3><a href="https://finance.caixin.com/2026-07-15/102464559.html" target="_blank" rel="noopener">4. 央行关注资管规模高增及货币政策传导效率</a></h3>
+      <div class="meta"><span class="badge cx">财新</span><span>7月15日</span></div>
+      <p>6月末中国资管产品资产达到124.8万亿元，同比增长12.7%，明显高于社融、M2和存贷款增速。央行将加强监测，规范削弱货币政策传导效果的不合理市场行为。</p>
+      <ul class="facts"><li>公募基金42.9万亿元，银行理财34.8万亿元，资产管理信托25.3万亿元。</li><li>非金融企业募集资金同比增长24.7%，住户部门增长7.7%。</li><li>资管产品持有股票9.5万亿元，同比增长26.2%。</li><li>资金从存款进入资管后再经同业存款和存单回流银行，可能抬高银行负债成本。</li></ul>
+      <div class="impact"><strong>市场含义：</strong>中国流动性并不稀缺，核心问题是资金进入消费和实体投资的效率。后续需关注理财、同业存单及银行负债端监管。</div>
+      <a class="source-link" href="https://finance.caixin.com/2026-07-15/102464559.html" target="_blank" rel="noopener">阅读财新原文 →</a>
+    </article>
   </section>
 
   <h2 class="section-title">宏观政治经济分析</h2>
   <section class="analysis-grid">
-    <article class="analysis"><h3>全球政策：紧缩尾部风险下降</h3><p>美国PPI回落压低7月加息概率，但Williams没有宣布抗通胀胜利。政策风险由“立刻加息”转为“高利率更久”，关税、能源和AI建设仍可能制造第二轮价格压力。</p></article>
-    <article class="analysis"><h3>资本流向：从叙事转向现金流</h3><p>TSMC的先进制程需求验证AI硬件景气，但SpaceX跌破发行价说明资本不再无条件接受远期估值。Stripe竞购PayPal则显示资金转向具备成熟用户、支付现金流和网络效应的平台资产。</p></article>
-    <article class="analysis"><h3>中国融资：结构调整多于总量刺激</h3><p>贷款增量低于预期、资管规模快速增长、直接融资占比提升共同说明资金正在绕开传统信贷单一渠道。结构性再贷款和离岸人民币建设更强调精准支持与跨境使用。</p></article>
+    <article class="analysis"><h3>地缘政治</h3><p>伊朗问题已从核谈判和区域军事冲突扩大为海上运输与能源安全问题。美国若投入地面部队，冲突成本、持续时间和外溢范围都将明显扩大。</p></article>
+    <article class="analysis"><h3>通胀与货币政策</h3><p>油价上升会通过运输、化工和居民燃料成本重新推高通胀，使主要央行更难快速降息。市场需要重新评估“战争升级与货币宽松可以同时发生”的假设。</p></article>
+    <article class="analysis"><h3>产业与资本流向</h3><p>美国以关税和安全政策推动芯片产能本土化，中国则试图把金融体系中的充裕资金引向实体部门。两者都显示资本配置正越来越受到国家战略影响。</p></article>
   </section>
 
-  <h2 class="section-title">核心投资品种</h2>
+  <h2 class="section-title">核心投资板块</h2>
   <section class="asset-grid">
-    <article class="asset gold"><div class="symbol">XAU/USD</div><h3>黄金</h3><div class="price">$4,037.3</div><div class="direction">看多，但不追高</div><p>PPI降温有利于实际利率预期下修；地缘与财政风险提供底仓价值。若美元反弹或美联储重新转鹰，短线仍会剧烈波动。</p></article>
-    <article class="asset silver"><div class="symbol">XAG/USD</div><h3>白银</h3><div class="price">$57.15</div><div class="direction">中性偏多</div><p>兼具贵金属与工业属性，受益于利率预期改善和AI电力、光伏需求；波动显著高于黄金，仓位应更轻。</p></article>
-    <article class="asset us"><div class="symbol">US EQUITIES</div><h3>S&amp;P 500</h3><div class="price">选择性配置</div><div class="direction">中性偏多</div><p>通胀数据改善支撑估值，但高利率和高盈利基数限制指数扩张。优先现金流稳健、资本开支可验证的公司。</p></article>
-    <article class="asset ai"><div class="symbol">NASDAQ / AI</div><h3>纳斯达克</h3><div class="price">分化加剧</div><div class="direction">谨慎看多</div><p>TSMC验证需求，SpaceX验证估值风险。AI产业并未转弱，但“只看增长、不看回报”的阶段正在结束。</p></article>
+    <article class="asset gold"><div class="symbol">PRECIOUS METALS</div><h3>黄金</h3><div class="direction positive">偏多</div><p>战争升级、能源通胀和政策不确定性形成支持。若美元与实际利率同步大涨，黄金短线仍可能出现剧烈震荡。</p></article>
+    <article class="asset silver"><div class="symbol">PRECIOUS + INDUSTRIAL</div><h3>白银</h3><div class="direction neutral">中性偏多</div><p>具备贵金属避险属性，同时受制造业和光伏需求影响。冲突冲击全球增长时，表现可能弱于黄金。</p></article>
+    <article class="asset us"><div class="symbol">US EQUITIES</div><h3>美股</h3><div class="direction neutral">高波动分化</div><p>AI资本开支支撑科技龙头，但油价与长端利率上升会压缩估值。能源、军工可能强于消费和航空。</p></article>
+    <article class="asset ai"><div class="symbol">AI INFRASTRUCTURE</div><h3>AI半导体</h3><div class="direction positive">结构性偏多</div><p>台积电扩产确认中长期需求，但供应链区域化将增加资本强度。重点关注设备、封装、散热、电力和数据中心。</p></article>
   </section>
 
-  <h2 class="section-title">重点产业赛道</h2>
-  <section class="track-grid">
-    <article class="track"><h3>AI产业</h3><ul><li><a href="https://au.marketscreener.com/news/tsmc-s-second-quarter-profit-seen-hitting-record-on-ai-boom-ce7f5ed2dc8bff22" target="_blank" rel="noopener">TSMC利润预期创新高</a>，先进制程与封装仍是最确定环节。</li><li><a href="https://www.ft.com/content/94959f40-1874-4ece-b629-b18f43aa3ede" target="_blank" rel="noopener">SpaceX跌破IPO价</a>，AI基础设施估值进入回报率检验期。</li><li><a href="https://finance.caixin.com/2026-07-15/102464551.html" target="_blank" rel="noopener">淡马锡增持中国敞口</a>，AI与生命科学交叉应用获长期资本关注。</li></ul></article>
-    <article class="track"><h3>跨境电商</h3><ul><li><a href="https://cincodias.elpais.com/legal/2026-03-06/europa-redefine-el-e-commerce-con-nuevas-reglas-para-temu-shein-o-aliexpress.html" target="_blank" rel="noopener">欧盟7月起实施每件3欧元进口附加成本</a>，Temu、Shein和独立站的直邮模型承压。</li><li>本地仓、区域履约和合规能力成为核心竞争力，低客单价卖家需重算毛利与退货成本。</li><li>Stripe竞购PayPal若推进，将强化全球支付、商户工具和消费者钱包整合趋势。</li></ul></article>
-    <article class="track"><h3>文化产业</h3><ul><li><a href="https://www.lemonde.fr/en/economy/article/2026/07/06/netflix-prime-video-and-disney-challenge-new-french-investment-rules_6755196_19.html" target="_blank" rel="noopener">Netflix、Prime Video与Disney+挑战法国投资规则</a>，平台与本地内容义务的冲突持续。</li><li>欧洲监管正在把流媒体从分发平台重新定义为本地文化投资者。</li><li>内容企业应关注本地制作配额、版权窗口期和AI生成内容标识成本。</li></ul></article>
-  </section>
-
-  <h2 class="section-title">板块方向</h2>
-  <table><thead><tr><th>板块</th><th>方向</th><th>核心逻辑</th></tr></thead><tbody>
-    <tr><td>半导体 / AI硬件</td><td class="up">看多</td><td>TSMC收入及利润继续创纪录，先进制程和封装需求可验证。</td></tr>
-    <tr><td>数字支付</td><td class="up">看多</td><td>PayPal竞购凸显支付网络、钱包用户和商户数据的战略价值。</td></tr>
-    <tr><td>贵金属</td><td class="up">中期看多</td><td>PPI降温改善利率环境，黄金更稳健，白银弹性更高。</td></tr>
-    <tr><td>高估值太空 / AI概念</td><td class="down">谨慎</td><td>SpaceX跌破IPO价，融资成本和盈利兑现压力上升。</td></tr>
-    <tr><td>中国金融 / 资管</td><td class="mid">结构性机会</td><td>资管扩张、直接融资提升，但监管将约束削弱政策传导的套利行为。</td></tr>
-    <tr><td>跨境直邮电商</td><td class="down">承压</td><td>欧盟每件3欧元成本改变低价小包模型，本地履约优于纯直邮。</td></tr>
-  </tbody></table>
+  <h2 class="section-title">板块影响矩阵</h2>
+  <table>
+    <thead><tr><th>板块</th><th>方向</th><th>核心逻辑</th></tr></thead>
+    <tbody>
+      <tr><td>能源 / 油气</td><td class="positive">偏多</td><td>霍尔木兹运输风险与伊朗能源设施风险溢价上升。</td></tr>
+      <tr><td>军工</td><td class="positive">偏多</td><td>弹药消耗、海上护航和中东部署需求增加。</td></tr>
+      <tr><td>航空 / 运输</td><td class="negative">偏空</td><td>燃油成本和航线安全成本上升。</td></tr>
+      <tr><td>半导体设备 / 封装</td><td class="positive">偏多</td><td>台积电美国扩建带来长期设备、工程和先进封装需求。</td></tr>
+      <tr><td>中国银行 / 理财</td><td class="neutral">中性偏谨慎</td><td>负债成本、同业存单和资管回流路径可能面临更严格监管。</td></tr>
+      <tr><td>中国权益资产</td><td class="neutral">结构性机会</td><td>资管持股增长明显，但仍需观察资金能否转化为实体需求和盈利改善。</td></tr>
+    </tbody>
+  </table>
 
   <h2 class="section-title">风险提示</h2>
-  <div class="risk"><h3>通胀数据不等于趋势确认</h3><p>单月PPI回落无法消除关税、油价和AI电力投资带来的中期通胀压力，美联储仍可能维持高利率。</p></div>
-  <div class="risk"><h3>AI估值进一步压缩</h3><p>若TSMC指引不及高预期，或SpaceX抛售扩散至高估值科技股，纳斯达克波动可能显著放大。</p></div>
-  <div class="risk"><h3>跨境政策成本上升</h3><p>欧盟小包收费只是监管重定价的一部分，产品安全、税务、数据与AI广告标识可能继续增加平台和卖家成本。</p></div>
+  <div class="risk"><h3>军事升级超预期</h3><p>夺取岛屿或攻击伊朗能源设施可能触发报复，使油价、航运保险和全球风险溢价快速上升。</p></div>
+  <div class="risk"><h3>通胀重新加速</h3><p>能源冲击若持续，央行可能推迟降息甚至重新转鹰，对美股估值、长债及房地产形成压力。</p></div>
+  <div class="risk"><h3>AI资本开支回报不及预期</h3><p>芯片产能区域化提高成本和折旧压力，若AI收入兑现放缓，产业链估值可能重新定价。</p></div>
 
-  <div class="method">数据说明：市场价格来自本地行情接口，更新时间为2026年7月16日；新闻以FT会员正文、Reuters转引、财新会员内容及公开权威来源交叉核验。Bloomberg RSS当日返回为空，WSJ RSS被识别为陈旧内容，故未纳入今日事实判断。本文为信息整理，不构成投资建议。</div>
+  <div class="method">数据范围：2026年7月15日至16日。本文基于用户会员权限下读取的FT、WSJ、Bloomberg和财新完整正文进行提炼；摘要不替代原文，事实与投资判断已分开呈现，不构成投资建议。</div>
 </main>
-<footer>生成时间：2026年7月16日 · <a href="https://bairimenglan1991.github.io/xiaotian-briefing/">小田每日新闻简报</a></footer>
+<footer>小田每日新闻简报 · 2026年7月16日 · <a href="archive/index.html">历史归档</a></footer>
 </body>
 </html>

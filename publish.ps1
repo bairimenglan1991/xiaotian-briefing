@@ -1,4 +1,4 @@
-# 小田简报一键发布脚本
+﻿# 小田简报一键发布脚本
 # 每天生成简报后运行此脚本，自动推送到 GitHub Pages
 # 用法：在 PowerShell 中运行 .\publish.ps1
 
