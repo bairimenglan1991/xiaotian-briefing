@@ -75,7 +75,7 @@ ${css}</style>
 
 <nav>
   <div class="brand">小田<span>每日简报</span></div>
-  <div class="date">📅 ${dateCn} ${weekday} · Bloomberg · FT · WSJ · 财新</div>
+  <div class="date">📅 ${dateCn} ${weekday} · FT · 财新 · Variety · MIT Technology Review</div>
 </nav>
 
 <div class="container">
@@ -85,7 +85,7 @@ ${content}
 </div>
 
 <footer>
-  <p>本简报由<strong>小田每日新闻简报</strong>自动生成 · 数据来源：Bloomberg · Financial Times 全文 · WSJ · 财新 全文 · gold-api.com · open.er-api.com</p>
+  <p>本简报由<strong>小田每日新闻简报</strong>自动生成 · 数据来源：Financial Times 全文 · 财新全文 · Bangkok Post · Variety · Screen Daily · MIT Technology Review · 量子位 · gold-api.com · open.er-api.com</p>
   <p style="margin-top:4px">生成时间：${footerDate} · 基于公开新闻整合分析 · 不构成投资建议 · 🔗 <a href="https://bairimenglan1991.github.io/xiaotian-briefing/" style="color:#60a5fa">bairimenglan1991.github.io/xiaotian-briefing</a></p>
 </footer>
 
@@ -97,12 +97,12 @@ fs.writeFileSync(outPath, html, 'utf8');
 console.log(`✅ 已生成完整简报：${outPath}`);
 console.log(`   日期 ${date} ${weekday} · 标签「${label}」`);
 
-// ── 自动导出转发文案（四焦点 + 链接）到桌面 push-<date>.txt
+// ── 自动导出转发文案（八条焦点 + 单一网页链接）到桌面 push-<date>.txt
 const stripHtml = s => s.replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&amp;/g, '&').trim();
 const focusRe = /<div class="fi-title">([\s\S]*?)<\/div>\s*<div class="fi-body">([\s\S]*?)<\/div>/g;
 const items = [];
 let fm;
-while ((fm = focusRe.exec(content)) && items.length < 7) {
+while ((fm = focusRe.exec(content)) && items.length < 8) {
   items.push({ title: stripHtml(fm[1]), body: stripHtml(fm[2]) });
 }
 if (items.length) {
