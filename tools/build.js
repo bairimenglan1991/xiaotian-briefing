@@ -75,7 +75,7 @@ ${css}</style>
 
 <nav>
   <div class="brand">小田<span>每日简报</span></div>
-  <div class="date">📅 ${dateCn} ${weekday} · FT · 财新 · Variety · MIT Technology Review</div>
+  <div class="date">📅 ${dateCn} ${weekday} · Bloomberg · FT · WSJ · 财新</div>
 </nav>
 
 <div class="container">
@@ -85,7 +85,7 @@ ${content}
 </div>
 
 <footer>
-  <p>本简报由<strong>小田每日新闻简报</strong>自动生成 · 数据来源：Financial Times 全文 · 财新全文 · Bangkok Post · Variety · Screen Daily · MIT Technology Review · 量子位 · gold-api.com · open.er-api.com</p>
+  <p>本简报由<strong>小田每日新闻简报</strong>自动生成 · 数据来源：Bloomberg · Financial Times · Wall Street Journal · 财新 · Bangkok Post · Screen Daily · MIT Technology Review · 量子位 · gold-api.com · open.er-api.com</p>
   <p style="margin-top:4px">生成时间：${footerDate} · 基于公开新闻整合分析 · 不构成投资建议 · 🔗 <a href="https://bairimenglan1991.github.io/xiaotian-briefing/" style="color:#60a5fa">bairimenglan1991.github.io/xiaotian-briefing</a></p>
 </footer>
 
