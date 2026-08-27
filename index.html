@@ -1,263 +1,85 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="briefing-label" content="PCE黏性 · 英伟达大超预期 · 美加关税 · AI与泰国产业决策">
-<meta name="briefing-weekday" content="星期四">
-<title>小田每日新闻简报 — 2026年8月27日</title>
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", "PingFang SC", sans-serif; background: #f0f2f5; color: #1a1a2e; line-height: 1.7; }
-  nav { background: #1a1a2e; padding: 0 24px; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; height: 60px; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
-  nav .brand { color: #fff; font-size: 1.15rem; font-weight: 700; }
-  nav .brand span { color: #60a5fa; }
-  nav .date { color: #a0aec0; font-size: 0.82rem; }
-  .container { max-width: 960px; margin: 0 auto; padding: 28px 20px 60px; }
-  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%); color: #fff; border-radius: 8px; padding: 36px 36px 32px; margin-bottom: 18px; }
-  .hero h1 { font-size: 1.85rem; font-weight: 800; margin-bottom: 8px; }
-  .hero > p { color: #cbd5e1; font-size: 0.9rem; }
-  .hero .sub { color: #a0c4ff; font-size: 0.88rem; margin-top: 6px; }
-  .hero .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-  .tag { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e0e7ff; font-size: 0.75rem; padding: 3px 10px; border-radius: 999px; }
-  .section-title { font-size: 1.1rem; font-weight: 700; color: #1a1a2e; border-left: 4px solid #3b82f6; padding-left: 12px; margin: 32px 0 16px; }
-  .market-block { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 28px; }
-  .market-card { background: #fff; border-radius: 12px; padding: 16px 18px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-top: 3px solid #d4af37; }
-  .market-card.fx { border-top-color: #3b82f6; }
-  .market-label { font-size: 0.78rem; color: #6b7280; margin-bottom: 4px; display: flex; align-items: center; gap: 5px; }
-  .market-value { font-size: 1.35rem; font-weight: 800; color: #1a1a2e; }
-  .market-unit { font-size: 0.72rem; color: #9ca3af; font-weight: 400; margin-left: 2px; }
-  .market-change { font-size: 0.76rem; font-weight: 600; margin-top: 4px; }
-  .chg-up { color: #16a34a; } .chg-down { color: #dc2626; } .chg-flat { color: #6b7280; }
-  .summary { background: #fff; border-left: 4px solid #0f766e; border-radius: 6px; padding: 15px 18px; margin-bottom: 18px; box-shadow: 0 1px 5px rgba(15,23,42,0.07); color: #334155; font-size: 0.88rem; line-height: 1.75; }
-  .focus-block { background: linear-gradient(135deg, #1e3a5f 0%, #1a1a2e 100%); border-radius: 8px; padding: 22px 26px; margin-bottom: 28px; border: 1px solid rgba(96,165,250,0.25); }
-  .focus-label { display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; letter-spacing: 0.06em; margin-bottom: 14px; }
-  .focus-title { font-size: 1rem; font-weight: 700; color: #bfdbfe; margin-bottom: 12px; }
-  .focus-items { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
-  .focus-item { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; padding: 14px 14px 13px; min-width: 0; }
-  .fi-icon { font-size: 0.72rem; font-weight: 800; color: #60a5fa; margin-bottom: 6px; }
-  .fi-title { font-size: 0.88rem; font-weight: 700; color: #e0e7ff; margin-bottom: 4px; }
-  .fi-body { font-size: 0.79rem; color: #94a3b8; line-height: 1.6; }
-  .fi-tag { display: inline-block; margin-top: 8px; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
-  .fi-bull { background: rgba(22,163,74,0.25); color: #4ade80; }
-  .fi-warn { background: rgba(245,158,11,0.25); color: #fbbf24; }
-  .fi-neutral { background: rgba(156,163,175,0.2); color: #d1d5db; }
-  .signal-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 28px; }
-  .signal { background: #fff; border-radius: 7px; padding: 15px 16px; border-top: 3px solid #d4af37; box-shadow: 0 2px 8px rgba(15,23,42,0.07); min-width: 0; }
-  .signal:nth-child(2) { border-top-color: #94a3b8; }
-  .signal:nth-child(3) { border-top-color: #2563eb; }
-  .signal:nth-child(4) { border-top-color: #0f766e; }
-  .signal .name { color: #64748b; font-size: 0.75rem; font-weight: 700; }
-  .signal .value { color: #0f172a; font-size: 1.02rem; font-weight: 800; margin: 3px 0; }
-  .signal .value.up { color: #15803d; }
-  .signal .note { color: #64748b; font-size: 0.74rem; line-height: 1.45; }
-  .news-list { display: grid; gap: 12px; }
-  .news { background: #fff; border-radius: 7px; padding: 19px 20px; box-shadow: 0 2px 8px rgba(15,23,42,0.07); border-left: 4px solid #2563eb; min-width: 0; }
-  .news.market { border-left-color: #2563eb; }
-  .news.thailand { border-left-color: #0f766e; }
-  .news.china { border-left-color: #dc2626; }
-  .news.ai { border-left-color: #7c3aed; }
-  .news h3 { font-size: 1rem; line-height: 1.5; margin-bottom: 7px; }
-  .news h3 a { color: #172554; text-decoration: none; overflow-wrap: anywhere; }
-  .news h3 a:hover { color: #2563eb; text-decoration: underline; }
-  .news .meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: #94a3b8; font-size: 0.72rem; margin-bottom: 9px; }
-  .news p { color: #374151; font-size: 0.87rem; line-height: 1.75; }
-  .news .impact { background: #f8fafc; border-left: 3px solid #cbd5e1; border-radius: 4px; padding: 10px 12px; margin-top: 11px; color: #475569; font-size: 0.82rem; line-height: 1.7; }
-  .news .impact strong { color: #0f172a; }
-  .source-link { display: inline-flex; margin: 10px 12px 0 0; color: #2563eb; font-size: 0.75rem; font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
-  .source-link:hover { text-decoration: underline; }
-  .news-card { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); border-left: 4px solid #3b82f6; transition: box-shadow 0.2s; }
-  .news-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
-  .news-card:nth-child(4n+1) { border-left-color: #3b82f6; }
-  .news-card:nth-child(4n+2) { border-left-color: #10b981; }
-  .news-card:nth-child(4n+3) { border-left-color: #f59e0b; }
-  .news-card:nth-child(4n+4) { border-left-color: #a855f7; }
-  .news-title { font-size: 0.98rem; font-weight: 700; margin-bottom: 7px; }
-  .news-title a { color: #1a1a2e; text-decoration: none; }
-  .news-title a:hover { color: #3b82f6; text-decoration: underline; }
-  .news-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
-  .badge { font-size: 0.68rem; font-weight: 600; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
-  .badge-bloomberg { background: #dbeafe; color: #1d4ed8; }
-  .badge-ft { background: #fee2e2; color: #991b1b; }
-  .badge-wsj { background: #fef9c3; color: #92400e; }
-  .badge-caixin { background: #dcfce7; color: #166534; }
-  .badge-bangkokpost { background: #e0e7ff; color: #3730a3; }
-  .badge-xinhua { background: #fee2e2; color: #b91c1c; }
-  .badge-thepaper { background: #ffedd5; color: #9a3412; }
-  .time { font-size: 0.72rem; color: #9ca3af; }
-  .news-body { font-size: 0.88rem; color: #374151; line-height: 1.7; }
-  .analysis-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-  .analysis { background: #fff; border-radius: 7px; padding: 18px 19px; box-shadow: 0 2px 8px rgba(15,23,42,0.07); min-width: 0; }
-  .analysis h3 { font-size: 0.92rem; color: #0f172a; padding-bottom: 8px; margin-bottom: 9px; border-bottom: 2px solid #e2e8f0; }
-  .analysis p { font-size: 0.84rem; color: #475569; line-height: 1.75; }
-  .analysis-card { background: #fff; border-radius: 12px; padding: 20px 22px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-  .analysis-card h3 { font-size: 0.93rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #e5e7eb; }
-  .analysis-card p { font-size: 0.86rem; color: #374151; line-height: 1.75; }
-  .invest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 8px; }
-  .invest-card { background: #fff; border-radius: 14px; padding: 20px 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); text-align: center; transition: transform 0.2s; }
-  .invest-card:hover { transform: translateY(-2px); }
-  .invest-icon { font-size: 2.2rem; margin-bottom: 8px; }
-  .invest-name { font-size: 0.92rem; font-weight: 700; color: #1a1a2e; margin-bottom: 8px; }
-  .invest-dir { font-size: 1.6rem; margin-bottom: 6px; }
-  .invest-label { font-size: 0.74rem; font-weight: 700; padding: 3px 12px; border-radius: 20px; display: inline-block; margin-bottom: 8px; }
-  .bull .invest-label { background: #dcfce7; color: #15803d; }
-  .bull { border-top: 4px solid #16a34a; }
-  .neutral .invest-label { background: #f3f4f6; color: #6b7280; }
-  .neutral { border-top: 4px solid #9ca3af; }
-  .bear .invest-label { background: #fee2e2; color: #991b1b; }
-  .bear { border-top: 4px solid #dc2626; }
-  .invest-logic { font-size: 0.76rem; color: #6b7280; line-height: 1.6; text-align: left; }
-  .invest-logic a { color: #3b82f6; font-size: 0.7rem; text-decoration: none; display: inline-block; margin-top: 4px; }
-  .track-block { background: #fff; border-radius: 12px; padding: 20px 22px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-  .track-block h3 { font-size: 0.98rem; font-weight: 700; color: #1a1a2e; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #f3f4f6; }
-  .track-item { padding: 10px 0; border-bottom: 1px solid #f3f4f6; font-size: 0.86rem; color: #374151; }
-  .track-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .track-item strong { color: #1a1a2e; display: block; margin-bottom: 3px; font-size: 0.9rem; }
-  .track-item a { color: #3b82f6; font-size: 0.75rem; font-weight: 600; text-decoration: none; }
-  .track-item a:hover { text-decoration: underline; }
-  .tracking-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-  .track { background: #fff; border-radius: 7px; padding: 18px 19px; box-shadow: 0 2px 8px rgba(15,23,42,0.07); border-top: 3px solid #0f766e; min-width: 0; }
-  .track:nth-child(2) { border-top-color: #d97706; }
-  .track:nth-child(3) { border-top-color: #7c3aed; }
-  .track h3 { color: #0f172a; font-size: 0.93rem; line-height: 1.45; margin-bottom: 8px; }
-  .track p { color: #475569; font-size: 0.83rem; line-height: 1.7; }
-  .track a { display: inline-flex; margin-top: 9px; color: #2563eb; font-size: 0.74rem; font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
-  .track a:hover { text-decoration: underline; }
-  .asset-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-  .asset { background: #fff; border-radius: 7px; padding: 18px 17px; box-shadow: 0 2px 8px rgba(15,23,42,0.07); border-top: 4px solid #94a3b8; min-width: 0; }
-  .asset.gold { border-top-color: #d4af37; }
-  .asset.silver { border-top-color: #94a3b8; }
-  .asset.us { border-top-color: #2563eb; }
-  .asset.ai { border-top-color: #7c3aed; }
-  .asset h3 { font-size: 0.95rem; color: #0f172a; margin-bottom: 8px; }
-  .asset .direction { display: inline-block; border-radius: 999px; padding: 2px 8px; margin-bottom: 9px; background: #f1f5f9; color: #475569; font-size: 0.7rem; font-weight: 700; }
-  .asset .direction.positive { background: #dcfce7; color: #166534; }
-  .asset p { color: #64748b; font-size: 0.78rem; line-height: 1.65; }
-  .method { margin-top: 24px; background: #e2e8f0; border-radius: 6px; padding: 14px 16px; color: #475569; }
-  .method h3 { color: #334155; font-size: 0.83rem; margin-bottom: 4px; }
-  .method p { font-size: 0.75rem; line-height: 1.65; }
-  .sector-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
-  .sector-table th { background: #1a1a2e; color: #fff; padding: 11px 16px; text-align: left; font-size: 0.82rem; font-weight: 600; }
-  .sector-table td { padding: 11px 16px; font-size: 0.86rem; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
-  .sector-table tr:last-child td { border-bottom: none; }
-  .sector-table tr:hover td { background: #f9fafb; }
-  .dir-bull { color: #059669; font-weight: 700; }
-  .dir-neutral { color: #6b7280; font-weight: 700; }
-  .dir-bear { color: #dc2626; font-weight: 700; }
-  .risk-item { background: #fff; border-left: 4px solid #f59e0b; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
-  .risk-item strong { color: #92400e; display: block; margin-bottom: 4px; font-size: 0.93rem; }
-  .risk-item p { font-size: 0.85rem; color: #4b5563; }
-  footer { background: #1a1a2e; color: #6b7280; text-align: center; padding: 22px 20px; font-size: 0.77rem; margin-top: 48px; }
-  footer p { margin-bottom: 4px; }
-  @media (max-width:900px) { .focus-items { grid-template-columns: repeat(2, minmax(0, 1fr)); } .tracking-grid, .analysis-grid { grid-template-columns: 1fr; } .asset-grid, .signal-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width:640px) { nav { height: auto; min-height: 52px; padding: 10px 14px; gap: 10px; align-items: flex-start; } nav .brand { font-size: 0.98rem; flex: 0 0 auto; } nav .date { text-align: right; font-size: 0.66rem; line-height: 1.45; } .container { padding: 16px 12px 44px; } .hero { padding: 23px 18px; } .hero h1 { font-size: 1.4rem; } .focus-block { padding: 18px 14px; } .focus-items, .signal-strip, .asset-grid { grid-template-columns: 1fr; } .news { padding: 16px 15px; } .news h3 { font-size: 0.94rem; } .invest-grid { grid-template-columns: 1fr 1fr; } }
-</style>
-</head>
-<body>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小田每日新闻简报｜2026年8月26日</title><style>
+:root{--ink:#17202a;--muted:#65717d;--paper:#f5f3ee;--line:#d8d6d0;--accent:#b42318;--gold:#a56b12;--navy:#17324d;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","Noto Sans SC",Arial,sans-serif;line-height:1.75;letter-spacing:0}main{width:min(1080px,calc(100% - 32px));margin:24px auto 64px;background:var(--white);box-shadow:0 12px 38px rgba(28,36,43,.09)}
+.hero{min-height:330px;padding:64px 7%;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:#17324d;border-bottom:6px solid #b88a3b}.kicker{font-size:12px;font-weight:700;color:#e3bb72;text-transform:uppercase}.hero h1{font-family:Georgia,"Songti SC",serif;font-size:clamp(34px,5vw,62px);line-height:1.16;margin:14px 0 10px;letter-spacing:0}.hero p{margin:0;color:#d9e1e7;font-size:16px}
+section{padding:34px 7% 4px}h2{font-family:Georgia,"Songti SC",serif;font-size:28px;line-height:1.3;margin:0 0 22px;padding-bottom:12px;border-bottom:2px solid var(--ink);letter-spacing:0}h3{font-size:19px;line-height:1.45;margin:26px 0 8px;color:var(--navy);letter-spacing:0}p{margin:0 0 14px}ul{margin:0 0 18px;padding-left:22px}li{margin:8px 0}.note{margin:0;padding:18px 7%;background:#eef1f2;border-left:4px solid var(--accent);color:#3d4a55}.table-wrap{overflow:auto;margin:8px 0 24px;border:1px solid var(--line)}table{border-collapse:collapse;width:100%;min-width:650px}th,td{padding:13px 15px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f0eee8;color:var(--navy)}a{color:#1769aa;text-decoration:none;overflow-wrap:anywhere}a:hover{text-decoration:underline}strong{color:#101820}footer{padding:30px 7%;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media(max-width:640px){main{width:100%;margin:0;box-shadow:none}.hero{min-height:270px;padding:40px 20px 30px}.hero h1{font-size:34px}section{padding:28px 20px 2px}.note{padding:16px 20px}h2{font-size:24px}h3{font-size:18px}.table-wrap{margin-left:0;margin-right:0}p,li{font-size:15px}}
+@media print{body{background:#fff}main{width:100%;margin:0;box-shadow:none}.hero{background:#17324d!important;min-height:220px}a{color:#17202a}}
+</style><style>
+      .section-eyebrow{font-size:12px;font-weight:800;color:#9a5b18;text-transform:uppercase;margin-bottom:6px;letter-spacing:0}
+      .regime-banner{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;margin:0 0 22px;background:#f3f6f5;border:1px solid #c9d5d1;border-left:4px solid #1f6b5c}
+      .regime-banner p{margin:6px 0 0;color:#475569}.status-dot{width:10px;height:10px;border-radius:50%;background:#d48a28;margin-top:7px;flex:0 0 auto}
+      .macro-table td:first-child{white-space:nowrap}.chain-block{padding:20px 0;border-bottom:1px solid var(--line)}.chain-block:last-child{border-bottom:0}
+      .chain-head{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center}.chain-head>span{display:grid;place-items:center;width:30px;height:30px;background:#152b3a;color:#fff;font-weight:800;font-size:12px}.chain-head h3{margin:0;color:#152b3a;font-size:18px}
+      .confidence,.assessment{font-size:12px;padding:4px 8px;border-radius:3px;white-space:nowrap}.confidence.medium,.assessment.mixed{background:#fff1d6;color:#87510d}.confidence.low{background:#f7e4e1;color:#96372b}.assessment.positive{background:#dff1e8;color:#176444}
+      .chain-flow{margin:14px 0 10px;padding:11px 14px;background:#f5f4ef;border-left:3px solid #d48a28;font-weight:700;color:#273846}
+      .muted{color:var(--muted);font-size:13px}.asset-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:20px}.asset-panel{padding:18px;border:1px solid var(--line);background:#fff}.asset-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}.asset-top h3{margin:0;color:#152b3a}.asset-panel p{font-size:14px;margin-bottom:9px}.evidence{padding-left:12px;border-left:3px solid}.evidence.plus{border-color:#288365}.evidence.minus{border-color:#bf5548}
+      .strategy-strip{padding:18px 20px;background:#152b3a;color:#fff}.strategy-strip strong{color:#f6c36b}.strategy-strip p{margin:6px 0 0;color:#e4ebef}.watch-list{counter-reset:item;list-style:none;padding:0}.watch-list li{padding:12px 0;border-bottom:1px solid var(--line)}.failure-note{padding:14px 16px;background:#f7e9e6;border-left:4px solid #b84b3f}.data-sources a{word-break:break-all}
+      @media(max-width:720px){.asset-grid{grid-template-columns:1fr}.chain-head{grid-template-columns:34px 1fr}.chain-head .confidence{grid-column:2;justify-self:start}.scenario-table,.macro-table{min-width:720px}.asset-panel{padding:15px}.regime-banner{padding:15px}.section-eyebrow{font-size:11px}}
+    </style><style>
+.part-band{padding:24px 7%;border-top:6px solid var(--navy);border-bottom:1px solid var(--line);background:#edf1f2;display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:baseline}
+.part-band span{font-size:12px;font-weight:800;color:var(--accent)}.part-band strong{font-family:Georgia,"Songti SC",serif;font-size:28px;color:var(--navy)}.part-band p{grid-column:2;margin:2px 0 0;color:var(--muted);font-size:14px}
+.analysis-part{margin-top:34px;background:#eef3f0;border-top-color:#1f6b5c}.analysis-part span{color:#1f6b5c}
+@media(max-width:640px){.part-band{padding:20px;grid-template-columns:1fr}.part-band strong{font-size:25px}.part-band p{grid-column:1}}
+</style></head><body><main>
+<header class="hero"><div class="kicker">XIAOTIAN DAILY BRIEFING</div><h1>小田每日新闻简报｜2026年8月26日</h1><p>全球政治经济 · 黄金白银 · 美股 · 企业与产业机会</p></header>
+<div class="note"><strong>数据范围：</strong>过去24小时｜曼谷时间09:15更新。FT、财新及1篇Bloomberg相关稿件已读取全文；WSJ为官方摘要。美国GDP修正值和7月PCE将在8月26日美东08:30发布，本版不提前使用。</div>
 
-<nav>
-  <div class="brand">小田<span>每日简报</span></div>
-  <div class="date">📅 2026年8月27日 星期四 · Bloomberg · FT · WSJ · 财新</div>
-</nav>
-
-<div class="container">
-
-<header class="hero">
-  <div class="hero-kicker">XIAOTIAN DAILY BRIEFING</div>
-  <h1>盈利强，通胀黏</h1>
-  <p>英伟达验证AI需求，但高利率、贸易与制度风险仍在约束估值</p>
-</header>
-
-<section class="section">
-  <h2>今日决策摘要</h2>
-  <div class="callout"><strong>一句话：</strong>当前是“强AI盈利 + 黏性通胀 + 上升的政策风险”混合状态。纳指获得盈利支撑，但不能忽略贴现率；黄金保留对冲价值，短线不宜追高。</div>
-  <p><strong>模型判断：</strong>美国核心PCE同比3.3%、消费支出环比仅增0.2%，说明通胀仍高而消费边际放缓；英伟达收入和EPS显著超预期，证明AI算力需求未降温。两股力量相互抵消，资产更可能结构分化而非单边运行。</p>
-</section>
-
-<section class="section">
-  <h2>市场快照</h2>
-  <div class="table-wrap"><table><tbody>
-    <tr><th>黄金 / 白银</th><td>现货黄金 4,607.50美元；现货白银 68.75美元。5日约 +3.91% / +4.42%。</td></tr>
-    <tr><th>美股</th><td>S&amp;P 500：7,675.70；纳斯达克：26,130.20。5日约 -0.42% / -0.76%；VIX 15.21。</td></tr>
-    <tr><th>利率 / 美元</th><td>美国10年期收益率4.664%；DXY 99.101；USD/CNY 6.7378；USD/THB 32.7961。</td></tr>
-    <tr><th>清迈96.5%金条</th><td>买入71,500 / 卖出71,700泰铢/บาททองคำ。</td></tr>
-    <tr><th>清迈96.5%金饰</th><td>买入70,069.52 / 卖出72,500泰铢/บาททองคำ。</td></tr>
-  </tbody></table></div>
-  <div class="callout warn"><strong>时效：</strong>清迈参考价最后更新时间为8月26日16:51（曼谷时间），不是今晨门店实时报价；成交另受工费、成色与回购差价影响。</div>
-</section>
-
-<section class="section">
-  <h2>今日八条焦点</h2>
-  <div class="focus-list">
-    <article class="focus-item"><div class="fi-num">01</div><div><div class="fi-title">美国核心PCE同比3.3%，黄金站在4600美元上方</div><div class="fi-body">总体PCE同比3.7%，核心环比0.2%，消费支出环比仅增0.2%。通胀仍高于目标，但没有出现新的核心加速；黄金同时面对避险需求和高收益率压力。</div><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026">BEA</a> · <a href="https://www.bloomberg.com/news/articles/2026-08-26/gold-consolidates-above-4-600-as-investors-weigh-fed-rate-path">Bloomberg</a></div></article>
-    <article class="focus-item"><div class="fi-num">02</div><div><div class="fi-title">英伟达收入962亿美元，数据中心同比增长117%</div><div class="fi-body">收入和调整后EPS均高于FactSet共识，毛利率75%。这是AI资本开支的强验证，但指数方向仍取决于后续指引、预先定价、实际利率与市场宽度。</div><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027">NVIDIA</a> · <a href="https://apnews.com/article/dc8d556e709b50915cca9217a60b1991">AP</a></div></article>
-    <article class="focus-item"><div class="fi-num">03</div><div><div class="fi-title">Meta最高约180亿美元解决儿童社交媒体伤害诉讼</div><div class="fi-body">协议包含青少年默认时限、夜间限制、年龄核验与家长工具，不构成Meta承认不当行为；部分付款取决于YouTube和TikTok是否接受相同条件。</div><a href="https://www.ft.com/content/21dcbd96-ee57-445c-a9ba-0938c49b91c0">FT全文</a></div></article>
-    <article class="focus-item"><div class="fi-num">04</div><div><div class="fi-title">美加谈判暂停，加拿大准备金额与税率对等反制</div><div class="fi-body">美国对276亿加元加拿大商品实施50%关税，加拿大与产业、劳工代表继续磋商。成本最终由谁承担取决于税目、合同、库存、汇率和替代供应。</div><a href="https://www.canada.ca/en/department-finance/news/2026/08/department-of-finance-meets-with-stakeholders-on-canadas-response-to-us-tariffs.html">加拿大财政部</a></div></article>
-    <article class="focus-item"><div class="fi-num">05</div><div><div class="fi-title">智谱GLM-5.3-Flash开源，模型价格战继续</div><div class="fi-body">320B多模态模型API输入/输出价为每百万tokens 0.8元/2.8元。公司称测试流量全部由国产芯片承载，但效率比较仍缺硬件、能耗和稳定性审计。</div><a href="https://www.caixin.com/2026-08-27/102478385.html">财新全文</a></div></article>
-    <article class="focus-item"><div class="fi-num">06</div><div><div class="fi-title">招聘平台增长，AI匹配进入全流程</div><div class="fi-body">BOSS直聘第二季月活7020万、收入23.99亿元，分别同比增10.4%和14.1%；猎聘付费企业客户仅增0.4%。AI既可能降搜寻成本，也可能制造自动筛选误拒。</div><a href="https://www.caixin.com/2026-08-27/102478374.html">财新全文</a></div></article>
-    <article class="focus-item"><div class="fi-num">07</div><div><div class="fi-title">泰国约束数据中心用电外部性，9月7日复核进口EV压力</div><div class="fi-body">数据中心新规目标是防止电网与环境成本转嫁；EV委员会将讨论进口车对本地产业冲击。正式细节未公布，企业应先做成本和政策情景表。</div><a href="https://www.bangkokpost.com/business/general/3308584/new-rules-set-to-prevent-ballooning-power-bills">Bangkok Post</a></div></article>
-    <article class="focus-item"><div class="fi-num">08</div><div><div class="fi-title">中国机器人从展示转向系统集成，规模数据仍需去水分</div><div class="fi-body">世界机器人大会展示44项新技术和方案，40家海外企业参与；未经原始口径核验的“全球出货占比”不能替代付费部署、连续运行与客户复购。</div><a href="https://english.beijing.gov.cn/beijinginfo/sci/latesttrends/202608/t20260825_4836401.html">北京市政府</a></div></article>
-  </div>
-</section>
-
-<section class="section">
-  <h2>政治经济因果链</h2>
-  <div class="cards">
-    <article class="card"><h3>PCE → 利率 → 黄金与成长股</h3><p>通胀仍高于目标 → 快速宽松概率受限 → 名义与实际利率保持压力 → 黄金机会成本和成长股贴现率上升。抵消项是消费放缓、制度风险与避险需求。</p><p><strong>最弱节点：</strong>缺少同一时点TIPS实际收益率与仓位证据，因此资产方向保持条件性。</p></article>
-    <article class="card"><h3>英伟达 → AI资本开支 → 盈利兑现</h3><p>业绩超预期 → AI供应链盈利预期上修 → 若客户收入与效率收益兑现，资本开支可持续；若回报不及融资、折旧和电力成本，投资周期会反转。</p><p><strong>确认：</strong>云厂商AI收入、自由现金流、利用率和盈利修正扩散。</p></article>
-    <article class="card"><h3>关税 → 成本分配 → 报复与重组</h3><p>明确税率与税目 → 到岸成本变化 → 进口商、消费者、出口商分担 → 换源与库存调整 → 对等反制可能延长。不能把行业冲击直接写成全面通胀。</p></article>
-  </div>
-</section>
-
-<section class="section">
-  <h2>今日分析课：利好为什么不等于上涨</h2>
-  <div class="lesson"><ol>
-    <li><strong>确认事实：</strong>英伟达收入962亿美元、调整后EPS 2.22美元，高于共识922.7亿美元与2.09美元。</li>
-    <li><strong>找变量：</strong>首先改变英伟达和AI供应链的盈利预期，不自动改变整个纳指的现金流。</li>
-    <li><strong>建因果链：</strong>盈利上修支持股价；但AI投资也提高融资、电力与折旧需求，高利率可能压缩估值。</li>
-    <li><strong>过定价闸门：</strong>检查共识、事前涨跌、期权隐波、仓位与指引。今天有共识，但仓位证据不完整。</li>
-    <li><strong>找最弱节点：</strong>客户的AI投资能否形成收入或成本节省，是资本开支持续性的关键。</li>
-    <li><strong>形成可证伪判断：</strong>若盈利修正扩散且实际利率不升，利多成立；若仅少数龙头增长而贴现率继续上行，指数利好会被削弱。</li>
-  </ol><p class="formula"><strong>通用公式：</strong>股价变化 ≈ 盈利预期变化 + 估值倍数变化 + 仓位/流动性变化。新闻往往只告诉你第一项。</p></div>
-</section>
-
-<section class="section">
-  <h2>黄金、白银与美股</h2>
-  <div class="table-wrap"><table><thead><tr><th>资产</th><th>判断</th><th>支持</th><th>约束</th><th>策略</th></tr></thead><tbody>
-    <tr><td>黄金</td><td>中期有对冲价值，短线中性</td><td>通胀、贸易与制度风险</td><td>美元和10年期收益率偏强，价格高位</td><td>保留核心仓、分批；看实际利率、DXY、ETF流</td></tr>
-    <tr><td>白银</td><td>混合偏正面，低置信度</td><td>AI/电力投资与贵金属需求</td><td>库存、订单和资金流证据不足</td><td>仓位小于黄金，等工业与资金面共振</td></tr>
-    <tr><td>S&amp;P 500</td><td>混合</td><td>AI盈利与低VIX</td><td>关税、黏性通胀和高折现率</td><td>偏现金流、定价权；查盈利修正与宽度</td></tr>
-    <tr><td>纳斯达克</td><td>条件性偏正面</td><td>英伟达超预期、数据中心+117%</td><td>高预期、高久期估值</td><td>不追单日反应；查指引、客户回报、实际利率</td></tr>
-  </tbody></table></div>
-</section>
-
-<section class="section"><h2>企业机会与动作</h2><div class="cards">
-  <article class="card"><h3>AI与招聘</h3><p>在真实工作流上比较模型的成功率、人工复核率、延迟、能耗和总成本；招聘筛选同时审计误拒与偏差，人类保留最终录用责任。</p></article>
-  <article class="card"><h3>泰国数据中心与汽车</h3><p>测算专线、电网扩容、PPA、水耗和碳披露；在9月7日前完成CBU/CKD、本地零部件率与补贴情景表，不提前扩库存。</p></article>
-  <article class="card"><h3>跨境、机器人、社交平台</h3><p>按HS税目和原产地重算美加链路；机器人看付费部署与连续运行；平台提前审计年龄核验、青少年限制和数据最小化。</p></article>
-  <article class="card"><h3>奶茶、甜叶菊与电影</h3><p>泰式奶茶9.9元价格锚下测试低糖小规格；甜叶菊无新事实，不用旧闻填位。Annapurna裁员是公司信号，不外推全球影视市场。</p></article>
-  </div>
-</section>
-
-<section class="section"><h2>近期展会</h2><ul>
-  <li><strong>9月23—24日，曼谷：</strong><a href="https://www.ieat.go.th/en/ieat-news/9674">Thailand Automation &amp; Robotics Summit 2026</a></li>
-  <li><strong>9月24—25日，是拉差：</strong><a href="https://www.smartmanufacturingthailand.com/en">Smart Manufacturing 2026</a></li>
-  <li><strong>9月22—24日，武汉：</strong><a href="https://www.ia-show.com/">China International Industry &amp; Robotics Expo</a></li>
+<div class="part-band news-part"><span>第一部分</span><strong>小田新闻</strong><p>八条焦点新闻、市场快照、产业动态与来源状态</p></div>
+<section><div class="section-eyebrow">MARKET SNAPSHOT</div><h2>市场快照与清迈参考金价</h2>
+<div class="table-wrap"><table><tbody>
+<tr><th>黄金 / 白银</th><td>现货黄金 4,645.90美元/盎司；现货白银 68.85美元/盎司</td></tr>
+<tr><th>美股</th><td>S&amp;P 500：7,677.28（1日+0.32%，20日+3.35%）；纳斯达克：26,151.30（1日+0.66%，20日+5.12%）；VIX：15.45</td></tr>
+<tr><th>利率 / 美元</th><td>美国10年期收益率4.639%；美元指数98.939；USD/CNY 6.737；USD/THB 32.7185</td></tr>
+<tr><th>清迈96.5%金条</th><td>买入71,650 / 卖出71,850泰铢/บาททองคำ</td></tr>
+<tr><th>清迈96.5%金饰</th><td>买入70,221.12 / 卖出72,650泰铢/บาททองคำ</td></tr>
+</tbody></table></div>
+<p class="failure-note"><strong>时效说明：</strong>清迈采用的泰国全国参考价最后更新于2026-08-25 16:45（曼谷时间），是当前可取得的最近报价，并非8月26日实时门店价。门店成交还受工费、成色和回购价差影响。</p></section><section><div class="section-eyebrow">TOP STORIES</div><h2>今日八条焦点新闻</h2><article class="chain-block"><h3>1. 加拿大报复性关税进入执行阶段</h3><p>加拿大公布99页清单，计划9月8日起对约200亿美元美国钢铁、乳制品、家电和农业设备等商品征收15%、25%或50%关税，并配套约75亿加元行业支持。北美贸易摩擦已从口头威胁转为有日期、有税目、有财政缓冲的政策冲击。</p><p class="muted">来源：<a href="https://www.ft.com/content/7ced71c2-03b8-4569-a68d-14624a7e83f2" target="_blank" rel="noreferrer">FT全文</a> · <a href="https://www.wsj.com/world/americas/the-canadian-bad-cop-on-the-front-lines-of-the-u-s-trade-war-23cc7454?mod=rss_worldnews" target="_blank" rel="noreferrer">WSJ摘要</a></p></article><article class="chain-block"><h3>2. 中国警告反制美国涉伊朗次级制裁</h3><p>美国把部分中国内地及香港企业列入涉伊朗制裁范围后，中方表示将采取必要措施维护企业权益。FT称中国吸收约九成伊朗石油出口，但美国尚未制裁大型中国金融机构。中美贸易休战、能源安全和关键矿产工具由此进入同一博弈场。</p><p class="muted">来源：<a href="https://www.ft.com/content/aa7ba671-8175-4b53-b6a5-28803a851493" target="_blank" rel="noreferrer">FT全文</a></p></article><article class="chain-block"><h3>3. 美国长债回购扩大，财政风险仍是定价约束</h3><p>美国财政部拟把多次长久期国债回购规模由每次20亿美元提高至至少40亿美元，同时未来数月仍有大额20年和30年新债发行。回购可改善交易流动性，却不会自动消除赤字、供给与期限溢价；这正是黄金和高估值美股共同面对的折现率变量。</p><p class="muted">来源：<a href="https://www.ft.com/content/9d61ca14-6939-4efa-a6fe-0ec1b283d77a" target="_blank" rel="noreferrer">FT评论一</a> · <a href="https://www.ft.com/content/7588a11f-ff57-4c1a-b4cf-2a55a6d8c6b2" target="_blank" rel="noreferrer">FT评论二</a> · <a href="https://www.bloomberg.com/news/articles/2026-08-26/citadel-securities-flight-reverses-bearish-call-on-long-bonds" target="_blank" rel="noreferrer">Bloomberg全文</a></p></article><article class="chain-block"><h3>4. 阿里核心人士增持超过8亿港元</h3><p>财新报道，马云、蔡崇信和吴泳铭近期合计增持阿里股份超过8亿港元；阿里此前又启动约800亿港元配售。内部人士买入可视为信心信号，但不能替代收入、利润率、自由现金流和资本配置验证，尤其要结合配售后的股本与资金用途判断。</p><p class="muted">来源：<a href="https://www.caixin.com/2026-08-26/102477868.html" target="_blank" rel="noreferrer">财新全文</a></p></article><article class="chain-block"><h3>5. AI代理与中国机器人生态同步扩张</h3><p>字节推出统一生产力AI代理“豆包工作”，范式联合优必选等十余家具身智能企业推进PhanthyMotus生态共建；Bloomberg摘要还显示银行工作流AI企业正进入新加坡。竞争重心正由单点模型转向工作流、数据权限、部署成本和真实任务成功率。</p><p class="muted">来源：<a href="https://www.caixin.com/2026-08-26/102477873.html" target="_blank" rel="noreferrer">财新全文</a> · <a href="https://www.qbitai.com/2026/08/479314.html" target="_blank" rel="noreferrer">量子位</a> · <a href="https://www.bloomberg.com/news/articles/2026-08-26/ai-startup-that-upends-junior-bankers-work-sets-up-in-singapore" target="_blank" rel="noreferrer">Bloomberg摘要</a></p></article><article class="chain-block"><h3>6. 泰国就450泰铢外国游客费征求意见</h3><p>泰国针对拟议的450泰铢外国游客费启动公众意见征询，说明政策仍处制度形成阶段，并非已经执行。企业端应重点跟踪收费渠道、实施日期、豁免范围以及收入用途；若落地，对高客单价旅行影响有限，但可能增加低价旅游产品的摩擦成本。</p><p class="muted">来源：<a href="https://www.bangkokpost.com/business/general/3307975/foreigners-given-a-say-on-tourism-fee" target="_blank" rel="noreferrer">Bangkok Post</a></p></article><article class="chain-block"><h3>7. 成熟IP继续主导票房，影视并购遭遇监管摩擦</h3><p>Screen Daily称最新《蜘蛛侠》升至美国历史票房第二位并向全球9亿美元推进；Variety报道Paramount与Warner Bros. Discovery交易引发州级反垄断争议。电影产业继续呈现“头部IP降低营销风险、并购扩大规模但监管成本上升”的双重结构。</p><p class="muted">来源：<a href="https://www.screendaily.com/news/spider-man-brand-new-day-climbs-to-number-two-at-all-time-us-box-office/5219718.article" target="_blank" rel="noreferrer">Screen Daily</a> · <a href="https://variety.com/2026/film/news/iowa-attorney-general-sue-california-paramount-warner-bros-1236843385/" target="_blank" rel="noreferrer">Variety</a></p></article><article class="chain-block"><h3>8. 黄金升至4,645美元，美股等待关键数据与AI业绩</h3><p>现货黄金报4,645.90美元，黄金期货20日上涨16.4%；白银报68.85美元，20日上涨19.58%，但波动率明显更高。S&P 500收于7,677.28点，纳斯达克收于26,151.30点。市场正在等待美国GDP修正值、7月PCE及AI龙头业绩验证。</p><p class="muted">来源：<a href="https://www.goldtraders.or.th/" target="_blank" rel="noreferrer">黄金市场数据</a> · <a href="https://www.bea.gov/news/schedule" target="_blank" rel="noreferrer">美国BEA发布日程</a></p></article></section><section><div class="section-eyebrow">BUSINESS</div><h2>企业与产业机会</h2>
+<ul><li><strong>跨境电商：</strong>立即建立加拿大99页税目映射，重算原产地、到岸价、DDP合同和退货成本；不要只按国家标签判断关税。</li><li><strong>AI：</strong>优先落地可核验、可回滚的工作流，以任务成功率、节省工时、人工复核率和单任务成本做采购门槛。</li><li><strong>机器人：</strong>跟踪中国生态共建是否产生标准接口、付费客户、批量部署和连续运行数据；泰国制造端今日没有新的高质量机器人报道。</li><li><strong>电影文化：</strong>成熟IP仍降低获客风险，但并购监管提高整合成本；独立项目应优先设计预售、合拍、电影节与区域发行路径。</li><li><strong>甜叶菊与奶茶：</strong>过去24小时未发现达到纳入标准的新鲜高质量产业报道。继续监测糖税、配方减糖、甜味剂价格、茶乳原料与东南亚门店数据，不用旧闻填位。</li><li><strong>展览：</strong>今天没有确认到中国或泰国新增、且与AI机器人或食品饮料高度相关的展会公告。</li></ul></section><section><div class="section-eyebrow">SOURCE STATUS</div><h2>四大付费媒体读取状态</h2><ul><li><strong>FT：</strong>4篇相关稿件已读取全文。</li><li><strong>财新：</strong>2篇相关稿件已读取全文。</li><li><strong>Bloomberg：</strong>1篇长债稿已在登录浏览器中核对全文；另1篇AI稿仅作摘要使用。</li><li><strong>WSJ：</strong>1篇为官方RSS摘要，未伪装为全文。</li></ul></section>
+<div class="part-band analysis-part"><span>第二部分</span><strong>新闻分析</strong><p>LLM Wiki复核、政治经济传导、情景与投资企业判断</p></div>
+<section><div class="section-eyebrow">FOCUS</div><h2>今日决策摘要</h2>
+<p><strong>政治经济主线：</strong>贸易冲突由威胁转向实施，中美在伊朗制裁问题上出现新的条件性冲突，美国财政供给继续抬高长端利率不确定性。当前更接近“增长分化 + 供给型通胀风险 + 限制性实际利率”，尚不足以确认全面滞胀。</p>
+<p><strong>核心资产：</strong>黄金中期结构仍偏正面，但20日上涨16.4%、高于20日均线8.27%，短期追价风险上升；白银同时受工业需求和贵金属资金驱动，波动率明显更高；美股盈利韧性仍在，但贸易成本与实际利率压制估值扩张。</p>
+<p><strong>企业主线：</strong>跨境企业要重做加拿大税目、原产地和合同成本测算；AI与机器人项目应从融资故事转向任务成功率、客户留存和单位经济；泰国旅游费仍在征询阶段，不应当作已实施政策。</p></section><section><div class="section-eyebrow">LLM WIKI REVIEW</div><h2>自有知识库复核</h2>
+<p>本期已通过 Political Economy LLM Wiki 进行只读复核。当日事实仍来自 Evidence Pack；Wiki 只提供机制、指标解释、假设与失败条件，没有自动导入新闻或写回模型判断。</p>
+<div class="table-wrap"><table><thead><tr><th>调用页面</th><th>对今日判断的修正</th></tr></thead><tbody>
+<tr><td>战略性关税、报复与贸易合作<br>贸易政策实施失败链<br>关税税率口径</td><td>加拿大关税对行业价格形成楔子的方向较清楚，但总体通胀、就业和美联储反应必须降为条件性结论。</td></tr>
+<tr><td>债券供需与利率决定<br>收益率曲线与期限溢价<br>债券收益率与融资条件</td><td>财政部回购只视为市场流动性操作，不等同于央行宽松；财政供给也不能机械推出所有期限收益率上涨。</td></tr>
+<tr><td>价值—价格缺口<br>无形资产与成长公司估值</td><td>阿里增持、AI代理与机器人生态扩张属于催化剂或活动信号，不证明盈利、内在价值和股东回报已经改善。</td></tr>
+</tbody></table></div>
+<p class="failure-note"><strong>知识缺口：</strong>政治制度、市场状态和预测错误目录尚无足够的实质页面；因此本期不声称完成了制度权限核验、历史regime校准或失败类比，相关资产结论不提高置信度。</p></section><section><div class="section-eyebrow">POLITICAL ECONOMY</div><h2>全球政治经济状态</h2>
+<div class="regime-banner"><span class="status-dot"></span><div><strong>当前状态：增长分化 + 贸易与地缘供给风险 + 高实际利率</strong><p>就业降温提高增长下行风险，制造业与私人需求仍有韧性；关税、能源制裁和财政供给使通胀与利率难以顺畅下行。结论置信度：中。</p></div></div>
+<div class="table-wrap"><table class="macro-table"><thead><tr><th>维度</th><th>最近可用证据</th><th>含义与限制</th></tr></thead><tbody>
+<tr><td>增长</td><td>Q2实际GDP初值年化+1.5%；私人国内最终销售+3.9%</td><td>总量降温但私人需求未衰退；8月26日修正值待公布</td></tr>
+<tr><td>就业</td><td>7月非农-2.3万；失业率4.1%；前两月合计下修10.3万</td><td>劳动力市场降温，对增长与宽松预期构成压力</td></tr>
+<tr><td>通胀</td><td>7月CPI同比3.4%；核心CPI 2.5%；ISM价格指数71.1</td><td>核心与投入价格信号分化；7月PCE待公布</td></tr>
+<tr><td>制造业</td><td>7月ISM制造业PMI 55.6；新订单56.7</td><td>工业需求仍有韧性，为白银提供基本面支撑但非充分条件</td></tr>
+<tr><td>利率</td><td>10年名义收益率4.639%；美国财政长债供给仍大</td><td>高折现率约束黄金机会成本与成长股估值</td></tr>
+<tr><td>市场定价</td><td>黄金20日+16.4%；纳指20日+5.12%；VIX 15.45</td><td>避险和AI利多已有部分反映，新增信息的边际影响更重要</td></tr>
+</tbody></table></div></section><section><div class="section-eyebrow">CAUSAL CHAINS</div><h2>关键因果链</h2>
+<div class="chain-block"><div class="chain-head"><span>01</span><h3>加拿大关税：从法律执行到企业成本</h3><b class="confidence medium">中等置信度</b></div><p class="chain-flow">已公布税目与日期 → 进口价格楔子 → 企业调价、换源或压缩利润 → 投资与就业调整 → 行业通胀</p><p><strong>机制：</strong>明确税率改变到岸成本与合同谈判。<strong>假设：</strong>9月8日按清单执行且豁免有限。<strong>失败条件：</strong>谈判延期、供应商降价、加元变化或库存吸收成本。总体通胀影响仍取决于覆盖面，不能直接推导美联储政策。</p></div>
+<div class="chain-block"><div class="chain-head"><span>02</span><h3>伊朗制裁：中间节点置信度低</h3><b class="confidence low">条件分支</b></div><p class="chain-flow">若美国制裁大型金融/航运节点 → 中国交易成本上升 → 若中方实质反制 → 关键矿产或贸易摩擦升级 → 油价与风险溢价变化</p><p><strong>最弱节点：</strong>美国尚未制裁大型中国金融机构，中方也未公布反制工具。因此“冲突升级”以后的市场路径必须保持条件性。确认信号是具体实体名单、执行期限、付款航运中断和正式反制措施。</p></div>
+<div class="chain-block"><div class="chain-head"><span>03</span><h3>财政与长端利率：回购不等于宽松</h3><b class="confidence medium">中等置信度</b></div><p class="chain-flow">大额债券供给与赤字预期 → 期限溢价压力 → 长端实际利率与折现率 → 黄金机会成本及成长股估值</p><p><strong>机制：</strong>长债供给需由投资者资产负债表吸收。回购改善特定券种流动性，但由新发债融资，不等同于央行扩表。<strong>反例：</strong>衰退避险、通胀快速下降或海外需求增强可压低收益率。</p></div></section><section><div class="section-eyebrow">SCENARIOS</div><h2>未来1至3个月情景</h2>
+<div class="table-wrap"><table class="scenario-table"><thead><tr><th>情景</th><th>触发条件</th><th>宏观与政治</th><th>资产含义</th></tr></thead><tbody>
+<tr><td><strong>基准</strong><br><span class="muted">较高可能性</span></td><td>加拿大关税部分执行；中美避免制裁大型金融节点；美国通胀缓慢回落</td><td>增长放缓但不衰退，政策保持限制性，贸易摩擦可控升级</td><td>黄金高位震荡偏强；白银高波动；美股分化</td></tr>
+<tr><td><strong>风险资产有利</strong><br><span class="muted">中等偏低</span></td><td>美加谈判缩小税目；中美贸易休战延长；PCE与实际利率回落</td><td>供给型通胀压力下降，企业利润率改善</td><td>美股受益；黄金避险溢价回落但利率下降形成抵消</td></tr>
+<tr><td><strong>风险资产不利</strong><br><span class="muted">中等偏低</span></td><td>报复关税扩散；美国制裁大型中国节点；油运或关键矿产受阻</td><td>增长下行与成本通胀并存，政策两难扩大</td><td>美股盈利和估值承压；黄金方向取决于实际利率、美元与流动性</td></tr>
+</tbody></table></div></section><section><div class="section-eyebrow">ASSET STRATEGY</div><h2>黄金、白银与美股策略</h2>
+<div class="asset-grid">
+<article class="asset-panel"><div class="asset-top"><h3>黄金</h3><span class="assessment positive">结构偏正面 · 短期谨慎</span></div><p><strong>支持：</strong>贸易、制裁与财政可信度风险；美元20日约-1.85%。</p><p><strong>约束：</strong>黄金20日+16.4%，距20日均线+8.27%；10年收益率仍高。</p><p><strong>策略：</strong>保留核心对冲仓，新增仓位分批，不追逐单日突破。确认看实际利率、美元与ETF资金流。</p></article>
+<article class="asset-panel"><div class="asset-top"><h3>白银</h3><span class="assessment mixed">混合偏正面 · 高波动</span></div><p><strong>支持：</strong>银价20日+19.58%，铜20日+6%，制造业新订单仍强。</p><p><strong>约束：</strong>20日年化波动32.65%，高于黄金20.88%；库存和资金流证据不足。</p><p><strong>策略：</strong>仓位低于黄金，等待工业订单、库存和贵金属资金同时确认。</p></article>
+<article class="asset-panel"><div class="asset-top"><h3>S&amp;P 500</h3><span class="assessment mixed">混合 · 中低置信度</span></div><p><strong>支持：</strong>20日+3.35%，VIX 15.45，私人需求仍有韧性。</p><p><strong>约束：</strong>关税压缩利润率、财政期限溢价和高折现率；今日关键数据尚未发布。</p><p><strong>策略：</strong>保持质量与现金流优先，降低对关税敏感、议价能力弱的行业集中度。</p></article>
+<article class="asset-panel"><div class="asset-top"><h3>纳斯达克</h3><span class="assessment mixed">混合 · 事件前谨慎</span></div><p><strong>支持：</strong>20日+5.12%，AI部署继续扩大。</p><p><strong>约束：</strong>AI资本开支回报与高估值；Nvidia业绩前预期和仓位信息不足。</p><p><strong>策略：</strong>不以AI标题替代现金流，重点验证收入、毛利率、折旧、利用率和自由现金流。</p></article>
+</div><div class="strategy-strip"><strong>组合姿态</strong><p>以黄金承担政策和储备多元化风险对冲；白银作为较小的增长敏感卫星仓；美股保留盈利质量敞口，减少高杠杆、高估值且关税议价能力弱的集中仓位。以上是条件策略，不是个性化买卖指令。</p></div></section><section><div class="section-eyebrow">WATCHLIST</div><h2>未来72小时验证清单</h2><ol class="watch-list">
+<li><strong>美国8月26日08:30 ET：</strong>Q2 GDP第二次估计、企业利润和7月PCE，检验增长、利润与实际利率路径。</li>
+<li><strong>美加政策文件：</strong>豁免、原产地、税目范围、执行日期及双方谈判变化。</li>
+<li><strong>中美涉伊朗制裁：</strong>大型金融机构、油轮、保险、付款渠道和正式反制清单。</li>
+<li><strong>黄金：</strong>ETF资金流、美元与实际利率能否支持已出现的强势价格。</li>
+<li><strong>AI与美股：</strong>Nvidia业绩、资本开支指引及客户收入兑现，判断预期差而非只看绝对增长。</li>
+</ol></section>
+<section class="data-sources"><div class="section-eyebrow">SOURCES</div><h2>新闻来源与数据链接</h2><ul><li><strong>FT全文：</strong><a href="https://www.ft.com/content/7ced71c2-03b8-4569-a68d-14624a7e83f2" target="_blank" rel="noreferrer">https://www.ft.com/content/7ced71c2-03b8-4569-a68d-14624a7e83f2</a></li><li><strong>WSJ摘要：</strong><a href="https://www.wsj.com/world/americas/the-canadian-bad-cop-on-the-front-lines-of-the-u-s-trade-war-23cc7454?mod=rss_worldnews" target="_blank" rel="noreferrer">https://www.wsj.com/world/americas/the-canadian-bad-cop-on-the-front-lines-of-the-u-s-trade-war-23cc7454?mod=rss_worldnews</a></li><li><strong>FT全文：</strong><a href="https://www.ft.com/content/aa7ba671-8175-4b53-b6a5-28803a851493" target="_blank" rel="noreferrer">https://www.ft.com/content/aa7ba671-8175-4b53-b6a5-28803a851493</a></li><li><strong>FT评论一：</strong><a href="https://www.ft.com/content/9d61ca14-6939-4efa-a6fe-0ec1b283d77a" target="_blank" rel="noreferrer">https://www.ft.com/content/9d61ca14-6939-4efa-a6fe-0ec1b283d77a</a></li><li><strong>FT评论二：</strong><a href="https://www.ft.com/content/7588a11f-ff57-4c1a-b4cf-2a55a6d8c6b2" target="_blank" rel="noreferrer">https://www.ft.com/content/7588a11f-ff57-4c1a-b4cf-2a55a6d8c6b2</a></li><li><strong>Bloomberg全文：</strong><a href="https://www.bloomberg.com/news/articles/2026-08-26/citadel-securities-flight-reverses-bearish-call-on-long-bonds" target="_blank" rel="noreferrer">https://www.bloomberg.com/news/articles/2026-08-26/citadel-securities-flight-reverses-bearish-call-on-long-bonds</a></li><li><strong>财新全文：</strong><a href="https://www.caixin.com/2026-08-26/102477868.html" target="_blank" rel="noreferrer">https://www.caixin.com/2026-08-26/102477868.html</a></li><li><strong>财新全文：</strong><a href="https://www.caixin.com/2026-08-26/102477873.html" target="_blank" rel="noreferrer">https://www.caixin.com/2026-08-26/102477873.html</a></li><li><strong>量子位：</strong><a href="https://www.qbitai.com/2026/08/479314.html" target="_blank" rel="noreferrer">https://www.qbitai.com/2026/08/479314.html</a></li><li><strong>Bloomberg摘要：</strong><a href="https://www.bloomberg.com/news/articles/2026-08-26/ai-startup-that-upends-junior-bankers-work-sets-up-in-singapore" target="_blank" rel="noreferrer">https://www.bloomberg.com/news/articles/2026-08-26/ai-startup-that-upends-junior-bankers-work-sets-up-in-singapore</a></li><li><strong>Bangkok Post：</strong><a href="https://www.bangkokpost.com/business/general/3307975/foreigners-given-a-say-on-tourism-fee" target="_blank" rel="noreferrer">https://www.bangkokpost.com/business/general/3307975/foreigners-given-a-say-on-tourism-fee</a></li><li><strong>Screen Daily：</strong><a href="https://www.screendaily.com/news/spider-man-brand-new-day-climbs-to-number-two-at-all-time-us-box-office/5219718.article" target="_blank" rel="noreferrer">https://www.screendaily.com/news/spider-man-brand-new-day-climbs-to-number-two-at-all-time-us-box-office/5219718.article</a></li><li><strong>Variety：</strong><a href="https://variety.com/2026/film/news/iowa-attorney-general-sue-california-paramount-warner-bros-1236843385/" target="_blank" rel="noreferrer">https://variety.com/2026/film/news/iowa-attorney-general-sue-california-paramount-warner-bros-1236843385/</a></li><li><strong>黄金市场数据：</strong><a href="https://www.goldtraders.or.th/" target="_blank" rel="noreferrer">https://www.goldtraders.or.th/</a></li><li><strong>美国BEA发布日程：</strong><a href="https://www.bea.gov/news/schedule" target="_blank" rel="noreferrer">https://www.bea.gov/news/schedule</a></li>
+<li><strong>美国BEA发布日程：</strong><a href="https://www.bea.gov/news/schedule" target="_blank" rel="noreferrer">https://www.bea.gov/news/schedule</a></li>
+<li><strong>美国财政部利率：</strong><a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates" target="_blank" rel="noreferrer">https://home.treasury.gov/resource-center/data-chart-center/interest-rates</a></li>
+<li><strong>泰国黄金协会：</strong><a href="https://www.goldtraders.or.th/" target="_blank" rel="noreferrer">https://www.goldtraders.or.th/</a></li>
 </ul></section>
-
-<section class="section"><h2>来源状态与方法边界</h2><ul>
-  <li>FT、财新和Bloomberg黄金稿已读全文；WSJ仅为官方RSS摘要。</li>
-  <li>Bloomberg Kioxia页面触发机器人验证后停止，未绕过验证；Fed Cook同为摘要级。</li>
-  <li>Reuters无可用新条目；新华网、澎湃、IndieWire无通过新鲜度校验的新稿。</li>
-  <li>Wiki只读复核：新闻事实不从Wiki继承，本期模型判断不自动写回长期知识库。</li>
-</ul><div class="callout warn"><strong>不确定性：</strong>黄金ETF/TIPS/期权仓位、白银库存、泰国政策细则、机器人真实销量与国产芯片效率均缺同口径验证。相关判断未提高置信度。</div></section>
-
-</div>
-
-<footer>
-  <p>本简报由<strong>小田每日新闻简报</strong>自动生成 · 数据来源：Bloomberg · Financial Times · Wall Street Journal · 财新 · Bangkok Post · Screen Daily · MIT Technology Review · 量子位 · gold-api.com · open.er-api.com</p>
-  <p style="margin-top:4px">生成时间：2026年8月27日 · 基于公开新闻整合分析 · 不构成投资建议 · 🔗 <a href="https://bairimenglan1991.github.io/xiaotian-briefing/" style="color:#60a5fa">bairimenglan1991.github.io/xiaotian-briefing</a></p>
-</footer>
-
-</body>
-</html>
+<footer>小田每日新闻简报｜2026年8月26日｜事实、官方表态、外部评论、模型推断与预测已分层。本文用于信息研究，不构成个性化投资建议。</footer></main></body></html>
