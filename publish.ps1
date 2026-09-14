@@ -8,7 +8,7 @@ param(
 
 $repoDir   = "C:\Users\User\Documents\xiaotian-briefing"
 $siteUrl   = "https://bairimenglan1991.github.io/xiaotian-briefing/"
-$desktopHtml = "$env:USERPROFILE\Desktop\xiaotian-briefing-$date.html"
+$sourceHtml = "E:\xiaotian-briefing-$date.html"
 
 Write-Host ""
 Write-Host "======================================" -ForegroundColor Cyan
@@ -17,9 +17,9 @@ Write-Host "  日期：$date" -ForegroundColor Cyan
 Write-Host "======================================" -ForegroundColor Cyan
 Write-Host ""
 
-# 检查桌面是否有今日简报
-if (-not (Test-Path $desktopHtml)) {
-    Write-Host "❌ 未找到今日简报：$desktopHtml" -ForegroundColor Red
+# 检查 E 盘是否有今日简报
+if (-not (Test-Path $sourceHtml)) {
+    Write-Host "❌ 未找到今日简报：$sourceHtml" -ForegroundColor Red
     Write-Host "👉 请先运行「小田简报」生成今日 HTML 文件" -ForegroundColor Yellow
     exit 1
 }
@@ -27,11 +27,11 @@ if (-not (Test-Path $desktopHtml)) {
 Write-Host "✅ 找到今日简报" -ForegroundColor Green
 
 # 复制为 index.html（最新简报首页）
-Copy-Item $desktopHtml "$repoDir\index.html" -Force
+Copy-Item $sourceHtml "$repoDir\index.html" -Force
 Write-Host "✅ 已更新 index.html（首页）" -ForegroundColor Green
 
 # 复制到归档目录
-Copy-Item $desktopHtml "$repoDir\archive\$date.html" -Force
+Copy-Item $sourceHtml "$repoDir\archive\$date.html" -Force
 Write-Host "✅ 已归档 archive/$date.html" -ForegroundColor Green
 
 # 自动更新归档列表
