@@ -6,7 +6,7 @@ param(
     [string]$date = (Get-Date -Format "yyyy-MM-dd")
 )
 
-$repoDir   = "C:\Users\User\Documents\xiaotian-briefing"
+$repoDir   = "E:\xiaotian-news\website"
 $siteUrl   = "https://bairimenglan1991.github.io/xiaotian-briefing/"
 $sourceHtml = "E:\xiaotian-news\reports\xiaotian-briefing-$date.html"
 
